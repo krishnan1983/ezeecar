@@ -1,0 +1,4 @@
+The  <a href="<?php echo $this->link;?>" target = "_blank" ><?php echo $this->name ?></a> playbook/process guide  has been authored in PPEditor and is ready for review and uploading to Processpedia.   Please confirm suitability and timing for the upload.
+
+
+

@@ -1,0 +1,29 @@
+K 25
+svn:wc:ra_dav:version-url
+V 88
+/PnG/!svn/ver/80332/ppEditor/trunk/ppeditor/library/Zend/InfoCard/Xml/Security/Transform
+END
+Exception.php
+K 25
+svn:wc:ra_dav:version-url
+V 102
+/PnG/!svn/ver/80332/ppEditor/trunk/ppeditor/library/Zend/InfoCard/Xml/Security/Transform/Exception.php
+END
+Interface.php
+K 25
+svn:wc:ra_dav:version-url
+V 102
+/PnG/!svn/ver/80332/ppEditor/trunk/ppeditor/library/Zend/InfoCard/Xml/Security/Transform/Interface.php
+END
+EnvelopedSignature.php
+K 25
+svn:wc:ra_dav:version-url
+V 111
+/PnG/!svn/ver/80332/ppEditor/trunk/ppeditor/library/Zend/InfoCard/Xml/Security/Transform/EnvelopedSignature.php
+END
+XmlExcC14N.php
+K 25
+svn:wc:ra_dav:version-url
+V 103
+/PnG/!svn/ver/80332/ppEditor/trunk/ppeditor/library/Zend/InfoCard/Xml/Security/Transform/XmlExcC14N.php
+END

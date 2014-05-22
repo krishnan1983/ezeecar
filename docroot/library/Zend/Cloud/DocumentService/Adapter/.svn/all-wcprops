@@ -1,0 +1,23 @@
+K 25
+svn:wc:ra_dav:version-url
+V 86
+/PnG/!svn/ver/80332/ppEditor/trunk/ppeditor/library/Zend/Cloud/DocumentService/Adapter
+END
+SimpleDb.php
+K 25
+svn:wc:ra_dav:version-url
+V 99
+/PnG/!svn/ver/80332/ppEditor/trunk/ppeditor/library/Zend/Cloud/DocumentService/Adapter/SimpleDb.php
+END
+WindowsAzure.php
+K 25
+svn:wc:ra_dav:version-url
+V 103
+/PnG/!svn/ver/80332/ppEditor/trunk/ppeditor/library/Zend/Cloud/DocumentService/Adapter/WindowsAzure.php
+END
+AbstractAdapter.php
+K 25
+svn:wc:ra_dav:version-url
+V 106
+/PnG/!svn/ver/80332/ppEditor/trunk/ppeditor/library/Zend/Cloud/DocumentService/Adapter/AbstractAdapter.php
+END

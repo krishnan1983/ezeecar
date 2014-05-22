@@ -1,0 +1,29 @@
+K 25
+svn:wc:ra_dav:version-url
+V 62
+/PnG/!svn/ver/80332/ppEditor/trunk/ppeditor/library/Zend/Cache
+END
+Manager.php
+K 25
+svn:wc:ra_dav:version-url
+V 74
+/PnG/!svn/ver/80332/ppEditor/trunk/ppeditor/library/Zend/Cache/Manager.php
+END
+Exception.php
+K 25
+svn:wc:ra_dav:version-url
+V 76
+/PnG/!svn/ver/80332/ppEditor/trunk/ppeditor/library/Zend/Cache/Exception.php
+END
+Backend.php
+K 25
+svn:wc:ra_dav:version-url
+V 74
+/PnG/!svn/ver/80332/ppEditor/trunk/ppeditor/library/Zend/Cache/Backend.php
+END
+Core.php
+K 25
+svn:wc:ra_dav:version-url
+V 71
+/PnG/!svn/ver/80332/ppEditor/trunk/ppeditor/library/Zend/Cache/Core.php
+END

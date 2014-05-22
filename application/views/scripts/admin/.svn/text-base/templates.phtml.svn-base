@@ -1,0 +1,31 @@
+<div id="mid-cont">				
+	<div class="w2 fright">		
+	<span class="button fleft"><a href="/admin/createtemplate" title="createtemplate"><span class="send-mes" title="createtemplate">Add New Template</span></a></span>
+	</div>		
+	<div class="column1 pad-adj fleft">		
+		<table cellpadding="0" cellspacing="0" class="table-style table-style1" summary="Create Template">
+			<caption style="display:none">Create Template</caption>	
+			<tr>
+				<th>Template Name</th>
+				<th>Type</th>
+				<th>Action</th>
+			</tr>
+			<?php 						
+			foreach($this->rs as $temp):?>
+			<tr>
+				<td width="40%">
+					<a href="/admin/createtemplate/template/<?php echo Pp_Common_UrlHelper::enCryptId($temp['TemplateId']); ?>"><?php echo $temp['TemplateName']?></a>				
+				</td>
+				<td width="20%"><?php echo Pp_Type::getDescriptionById($temp['TemplateType']); ?></td>
+				<td width="25%">						
+					<span class="button fleft"><a href="/admin/createtemplate/template/<?php echo Pp_Common_UrlHelper::enCryptId($temp['TemplateId']); ?>" title="Edit Template"><span class="edit-req">Edit</span></a></span>						
+					<span class="button fleft"><a href="javascript:void(0)" onclick= "PP.template._tempdelete($(this), '<?php echo Pp_Common_UrlHelper::enCryptId($temp['TemplateId']); ?>')" class = "deleteBtn" ><span class="send-mes" title="Delete Template">Delete</span></a></span>						
+				</td>
+			</tr>
+			<?php endforeach; ?>				
+			</table>
+		</div>
+	</div>	
+	<div class="pagination">  
+    <?php //echo $this->paginationControl($this->data, 'Sliding', '/partials/paginator.phtml'); ?>	   
+</div>	

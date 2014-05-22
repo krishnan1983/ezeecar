@@ -1,0 +1,29 @@
+K 25
+svn:wc:ra_dav:version-url
+V 69
+/PnG/!svn/ver/80332/ppEditor/trunk/ppeditor/library/Zend/Auth/Storage
+END
+NonPersistent.php
+K 25
+svn:wc:ra_dav:version-url
+V 87
+/PnG/!svn/ver/80332/ppEditor/trunk/ppeditor/library/Zend/Auth/Storage/NonPersistent.php
+END
+Exception.php
+K 25
+svn:wc:ra_dav:version-url
+V 83
+/PnG/!svn/ver/80332/ppEditor/trunk/ppeditor/library/Zend/Auth/Storage/Exception.php
+END
+Interface.php
+K 25
+svn:wc:ra_dav:version-url
+V 83
+/PnG/!svn/ver/80332/ppEditor/trunk/ppeditor/library/Zend/Auth/Storage/Interface.php
+END
+Session.php
+K 25
+svn:wc:ra_dav:version-url
+V 81
+/PnG/!svn/ver/80332/ppEditor/trunk/ppeditor/library/Zend/Auth/Storage/Session.php
+END

@@ -1,0 +1,47 @@
+K 25
+svn:wc:ra_dav:version-url
+V 61
+/PnG/!svn/ver/80332/ppEditor/trunk/ppeditor/library/Zend/Ldap
+END
+Collection.php
+K 25
+svn:wc:ra_dav:version-url
+V 76
+/PnG/!svn/ver/80332/ppEditor/trunk/ppeditor/library/Zend/Ldap/Collection.php
+END
+Exception.php
+K 25
+svn:wc:ra_dav:version-url
+V 75
+/PnG/!svn/ver/80332/ppEditor/trunk/ppeditor/library/Zend/Ldap/Exception.php
+END
+Dn.php
+K 25
+svn:wc:ra_dav:version-url
+V 68
+/PnG/!svn/ver/80332/ppEditor/trunk/ppeditor/library/Zend/Ldap/Dn.php
+END
+Attribute.php
+K 25
+svn:wc:ra_dav:version-url
+V 75
+/PnG/!svn/ver/80332/ppEditor/trunk/ppeditor/library/Zend/Ldap/Attribute.php
+END
+Filter.php
+K 25
+svn:wc:ra_dav:version-url
+V 72
+/PnG/!svn/ver/80332/ppEditor/trunk/ppeditor/library/Zend/Ldap/Filter.php
+END
+Node.php
+K 25
+svn:wc:ra_dav:version-url
+V 70
+/PnG/!svn/ver/80332/ppEditor/trunk/ppeditor/library/Zend/Ldap/Node.php
+END
+Converter.php
+K 25
+svn:wc:ra_dav:version-url
+V 75
+/PnG/!svn/ver/80332/ppEditor/trunk/ppeditor/library/Zend/Ldap/Converter.php
+END

@@ -1,0 +1,29 @@
+K 25
+svn:wc:ra_dav:version-url
+V 61
+/PnG/!svn/ver/80332/ppEditor/trunk/ppeditor/library/Zend/Soap
+END
+Wsdl.php
+K 25
+svn:wc:ra_dav:version-url
+V 70
+/PnG/!svn/ver/80332/ppEditor/trunk/ppeditor/library/Zend/Soap/Wsdl.php
+END
+Client.php
+K 25
+svn:wc:ra_dav:version-url
+V 72
+/PnG/!svn/ver/80332/ppEditor/trunk/ppeditor/library/Zend/Soap/Client.php
+END
+Server.php
+K 25
+svn:wc:ra_dav:version-url
+V 72
+/PnG/!svn/ver/80332/ppEditor/trunk/ppeditor/library/Zend/Soap/Server.php
+END
+AutoDiscover.php
+K 25
+svn:wc:ra_dav:version-url
+V 78
+/PnG/!svn/ver/80332/ppEditor/trunk/ppeditor/library/Zend/Soap/AutoDiscover.php
+END

@@ -1,0 +1,6 @@
+SetEnv APPLICATION_ENV staging
+
+RewriteEngine On
+
+RewriteRule !\.(js|ico|txt|gif|jpg|png|css|json|eot|svg|ttf|woff|swf|doc|docx|pdf|html|pptx|docx|pptx|pdf|doc|xlsx|htm)$ index.php [NC,L]
+

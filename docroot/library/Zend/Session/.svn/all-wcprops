@@ -1,0 +1,23 @@
+K 25
+svn:wc:ra_dav:version-url
+V 64
+/PnG/!svn/ver/80332/ppEditor/trunk/ppeditor/library/Zend/Session
+END
+Namespace.php
+K 25
+svn:wc:ra_dav:version-url
+V 78
+/PnG/!svn/ver/80332/ppEditor/trunk/ppeditor/library/Zend/Session/Namespace.php
+END
+Exception.php
+K 25
+svn:wc:ra_dav:version-url
+V 78
+/PnG/!svn/ver/80332/ppEditor/trunk/ppeditor/library/Zend/Session/Exception.php
+END
+Abstract.php
+K 25
+svn:wc:ra_dav:version-url
+V 77
+/PnG/!svn/ver/80332/ppEditor/trunk/ppeditor/library/Zend/Session/Abstract.php
+END

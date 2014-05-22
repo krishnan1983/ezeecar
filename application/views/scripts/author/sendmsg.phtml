@@ -1,0 +1,95 @@
+	<div id="mid-cont">
+		<h3 class="fleft">Send Message</h3>
+		<span class="button fright"><a href="/admin/requests/search/<?php echo $this->search?>" title="Back to Request Lisiting"><span class="back">Back to Request Listing</span></a></span>
+		<div class="column1 pad-adj fleft">		
+		<form name="updatemsg" id="updatemsg" action="/admin/createmsg" method="post" />
+		<input type="hidden" name="RequestId" value="<?php if(isset($this->rs[0]['RequestId'])) echo $this->rs[0]['RequestId']; ?>" />
+		<input type="hidden" name="msgtype" value="update" />
+			<table cellpadding="0" cellspacing="0" class="table-style">		
+				<tr class="dgrey">
+					<td width="15%">Request Name:</td>
+					<td width="85%" style="font-weight:bold;color:#F5F6CE"><?php echo $this->rs[0]['Name'];?></td>
+				</tr>
+				<?php 	
+				foreach($this->rs as $records){ ?>
+				<!-- <tr class="lgrey brd-bottom">
+					<td colspan="2"><strong>Last Message</strong>:
+						<table cellpadding="0" cellspacing="0" width="100%">
+							<tr>
+								<td width="8%">&nbsp;</td>
+								<td width="10%" align="right">Message By:</td>
+								<td width="82%"><?php echo $records['name'];?> on <?php echo $records['dt'];?></td>
+							</tr>
+							<tr>
+								<td>&nbsp;</td>
+								<td align="right">Message:</td>
+								<td><?php echo $records['Message'];?></td>
+							</tr>
+						</table>
+					</td>
+				</tr>-->
+				<tr class="lgrey brd-bottom">
+					<td colspan = "2">
+						<table cellpadding="0" cellspacing="0" width="100%" border=1>
+							<tr>
+								<td width="15%"><strong>Message By</strong>:</td>
+								<td>
+									<?php 
+									echo $records['name'];?> 								
+									<?php echo $records['dt'];?>
+								</td>
+							</tr>
+
+							<tr>
+								<td>&nbsp;</td>
+								<!-- <td align="right">Message:</td>-->
+								<td>Message: <?php echo stripslashes($records['Message']);?></td>
+							</tr>
+						</table>
+					</td>
+				</tr>	
+				
+				<?php } ?>
+				<tr>
+					<td><label class = "required">Status:</label></td>
+					<td><select class="w2" name="Status" id="Status">				
+						<?php if($this->rs[0]['Status'] == Pp_Status::Open){?>
+						<option value="<?php echo Pp_Status::Open?>" selected><?php echo Pp_Status::getDescriptionById($this->rs[0]['Status']);?></option>
+						<?php }else{ ?>
+						<option value="<?php echo Pp_Status::Open?>" ><?php echo Pp_Status::getDescriptionById(Pp_Status::Open);?></option>
+						<?php } if($this->rs[0]['Status'] == Pp_Status::Closed){?>
+						<option value="<?php echo Pp_Status::Closed?>" selected><?php echo Pp_Status::getDescriptionById($this->rs[0]['Status']);?></option>
+						<?php }else{?>
+						<option value="<?php echo Pp_Status::Closed?>" ><?php echo Pp_Status::getDescriptionById(Pp_Status::Closed);?></option>
+					
+						<?php } if($this->rs[0]['Status'] == Pp_Status::AssignedToAdmin){?>
+						<option value="<?php echo Pp_Status::AssignedToAdmin?>" selected><?php echo Pp_Status::getDescriptionById($this->rs[0]['Status']);?></option>
+						<?php }else{ ?>
+						<option value="<?php echo Pp_Status::AssignedToAdmin?>" ><?php echo Pp_Status::getDescriptionById(Pp_Status::AssignedToAdmin);?></option>
+						<?php } if($this->rs[0]['Status'] == Pp_Status::AssignedToAuthor){?>
+						<option value="<?php echo Pp_Status::AssignedToAuthor?>" selected><?php echo Pp_Status::getDescriptionById($this->rs[0]['Status']);?></option>
+						<?php }else{?>
+						<option value="<?php echo Pp_Status::AssignedToAuthor?>" ><?php echo Pp_Status::getDescriptionById(Pp_Status::AssignedToAuthor);?></option>
+						<?php }if($this->rs[0]['Status'] == Pp_Status::TA){?>
+						<option value="<?php echo Pp_Status::TA?>" selected><?php echo Pp_Status::getDescriptionById($this->rs[0]['Status']);?></option>
+						<?php }else{?>
+						<option value="<?php echo Pp_Status::TA?>" ><?php echo Pp_Status::getDescriptionById(Pp_Status::TA);?></option>
+						<?php }?>
+					</select></td>
+				</tr>										
+				<tr>
+					<td><label class = "required">Message:</label></td>
+					<td><Textarea   class="w3" name="message" id="message" /></textarea></td>
+				</tr>				
+				<tr>
+					<td>&nbsp;</td>
+					<td><span class="fleft"><input type="submit" name="submit" id="submit" value="Send Message" class="button" /></span>
+						<span class="button fleft"><a href="/admin/viewrequest/request/<?php if(isset($records['RequestId'])) echo $records['RequestId'];?>" title="Cancel">Cancel</a></span>
+					</td>
+				</tr>
+			</table>
+		</div>
+	</div>	
+<script>
+PP.sendmsg.init();
+</script>

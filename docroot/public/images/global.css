@@ -1,0 +1,91 @@
+
+/* Reset style*/
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video { margin: 0;	padding: 0;	border: 0;}
+
+body{font:12px Arial, Helvetica, sans-serif;color:#292929;background: url('../images/body-bg.gif') repeat-x}
+ul{list-style:none;}
+a{text-decoration:none;}
+a:link, a:visited, a:active, a:hover {text-decoration:none;outline:none}
+.hideme{display:none;}
+.clear{background-color:transparent;color:inherit;margin:0px;padding:0px;clear:both;}
+.fleft{float:left;}
+.fright{float:right;}
+.boldtxt{font-weight:bold;}
+.t-right{text-align:right}
+
+h3{margin-bottom:10px;font-size:20px;font-weight:bold;color:#224570;line-height:20px}
+
+.no-bg{background:none}
+
+#mainCont{margin:0 auto;width:998px;font-size:12px;}
+#header{float:left;padding:8px 8px 0 8px;width:982px;color:#3A70C0}
+.user{padding:16px 8px 8px;color:#3a70c0;font-weight:bold}
+
+.blue-box{margin:0 auto;width:390px;background:#099BC2 url(../images/blue-tile.png) repeat-x left 10px;color:#fff;font-size:13px;}
+
+.menu{float:left;width:998px;margin-top:13px;font-size:12px;font-weight:bold;line-height:18px;}
+.menu ul{float:left;width:998px;}
+.menu ul li{float:left;padding:0px;}
+.menu ul li a{float:left;padding:8px 10px;color:#fff;}
+.menu ul li a:hover{float:left;padding:8px 10px;color:#00254f}
+.menu ul li a.active{color:#00254f}
+
+#mid-cont{float:left;padding:20px 20px 200px;width:958px;}
+
+.red{color:#ff0000}
+
+.column1{width:954px;padding:1px;bordeR:1px solid #e5e5e5}
+
+.pad-adj{margin-top:10px}
+.pad-adj1{margin-top:5px}
+.pad-adj2{margin-right:10px}
+.pad-adj3{margin-top:150px}
+
+table.table-style {width:100%;border-collapse:collapse;}
+table.table-style  a{color:#027ac9}
+table.table-style  a.dblue{color:#032d45;text-decoration:underline}
+table.table-style  a.white{color:#fff;text-decoration:underline}
+table.table-style  a:hover.dblue, table.table-style  a:hover.white{text-decoration:none}
+table.table-style tr {padding:0;margin:0}
+table.table-style tr th{padding:6px 10px;margin:0;font-size:13px;font-weight:bold;text-align:left;background:#e9e9eb url('../images/th-bg.gif') repeat-x;color:#666 !important}
+table.table-style tr td{padding:6px 10px;}
+table.table-style1 tr td{padding:4px 10px}
+table.table-style tr.dgrey td{background:#666;color:#fff}
+table.table-style tr.lgrey td{background:#f6f6f6;}
+table.table-style tr td table tr td{border:none !important}
+
+.back{float:left;padding-left:12px;background: #fff url('../images/back-arrow.gif') no-repeat 0px 2px;color:#444 !important}
+
+span.button{margin-right:10px;padding:0 0 0 5px;height:26px;background: url('../images/btn-left.png') no-repeat top left}
+span.button a{float:left;padding:5px 10px 0 5px;height:26px;text-align:center;font-size:12px;color:#444 !important;background: url('../images/btn-right.png') no-repeat top right}
+span.button a:hover{text-decoration:none !important}
+span.button.no-pad{margin-right:0;}
+
+span.button a span{background: url('../images/icons.png') no-repeat;}
+span.button a span.edit-req{padding-left:20px;background-position:0px 0px}
+span.button a span.send-mes{padding-left:24px;background-position:0px -24px}
+span.button a span.send-ta{padding-left:22px;background-position:0px -52px}
+span.button a span.back{padding-left:18px;background-position:0px -81px}
+span.button a span.edit{padding-left:22px;background-position:0px -106px}
+
+/*Form style*/
+input,select{padding:2px;font:12px Arial, Helvetica, sans-serif;color:#292929;border:1px solid #959595}
+
+.signin{float:left;width:81px;height:29px;text-align:center;font-size:14px;color:#666 !important;background: url('../images/button-bg.png') no-repeat top right;border:none}
+
+.w1{width:90px}
+.w2{width:160px}
+.w3{width:360px}
+.w4{width:220px}
+
+#footer{float:left;height:60px;width:100%;background: #fff url('../images/footer-bg.gif') repeat-x}
+.foot-cont{margin:0 auto;width:998px;color:#888}
+.copyright{padding-top:30px;font-size:11px}
+
+
+
+
+
+
+

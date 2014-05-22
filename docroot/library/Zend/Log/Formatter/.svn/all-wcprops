@@ -1,0 +1,35 @@
+K 25
+svn:wc:ra_dav:version-url
+V 70
+/PnG/!svn/ver/80955/ppEditor/trunk/ppeditor/library/Zend/Log/Formatter
+END
+Simple.php
+K 25
+svn:wc:ra_dav:version-url
+V 81
+/PnG/!svn/ver/80955/ppEditor/trunk/ppeditor/library/Zend/Log/Formatter/Simple.php
+END
+Interface.php
+K 25
+svn:wc:ra_dav:version-url
+V 84
+/PnG/!svn/ver/80332/ppEditor/trunk/ppeditor/library/Zend/Log/Formatter/Interface.php
+END
+Xml.php
+K 25
+svn:wc:ra_dav:version-url
+V 78
+/PnG/!svn/ver/80332/ppEditor/trunk/ppeditor/library/Zend/Log/Formatter/Xml.php
+END
+Abstract.php
+K 25
+svn:wc:ra_dav:version-url
+V 83
+/PnG/!svn/ver/80332/ppEditor/trunk/ppeditor/library/Zend/Log/Formatter/Abstract.php
+END
+Firebug.php
+K 25
+svn:wc:ra_dav:version-url
+V 82
+/PnG/!svn/ver/80332/ppEditor/trunk/ppeditor/library/Zend/Log/Formatter/Firebug.php
+END

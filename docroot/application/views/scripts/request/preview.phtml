@@ -1,0 +1,566 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en"xml:lang="en" dir="ltr">
+  <head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <title>Preview | PPEditor</title>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta http-equiv="refresh" content="3600;" />
+<link rel="shortcut icon" href="http://stage.processpedia.cs.pg.com/sites/all/themes/processpedia/favicon.png" type="image/x-icon" />
+  <link type="text/css" rel="stylesheet" media="all" href="http://stage.processpedia.cs.pg.com/sites/all/modules/codefilter/codefilter.css?5" />
+  <link type="text/css" rel="stylesheet" media="all" href="/public/css/ppeditor.css" />
+  
+<link type="text/css" rel="stylesheet" media="all" href="http://stage.processpedia.cs.pg.com/modules/book/book.css?5" />
+<link type="text/css" rel="stylesheet" media="all" href="http://stage.processpedia.cs.pg.com/modules/node/node.css?5" />
+<link type="text/css" rel="stylesheet" media="all" href="http://stage.processpedia.cs.pg.com/modules/system/admin.css?5" />
+<link type="text/css" rel="stylesheet" media="all" href="http://stage.processpedia.cs.pg.com/modules/system/defaults.css?5" />
+<link type="text/css" rel="stylesheet" media="all" href="http://stage.processpedia.cs.pg.com/modules/system/system.css?5" />
+<link type="text/css" rel="stylesheet" media="all" href="http://stage.processpedia.cs.pg.com/modules/user/user.css?5" />
+<link type="text/css" rel="stylesheet" media="all" href="http://stage.processpedia.cs.pg.com/sites/all/modules/cck/theme/content-module.css?5" />
+<link type="text/css" rel="stylesheet" media="all" href="http://stage.processpedia.cs.pg.com/sites/all/modules/ctools/css/ctools.css?5" />
+<link type="text/css" rel="stylesheet" media="all" href="http://stage.processpedia.cs.pg.com/sites/all/modules/filefield/filefield.css?5" />
+<link type="text/css" rel="stylesheet" media="all" href="http://stage.processpedia.cs.pg.com/sites/all/modules/megamenu/megamenu.css?5" />
+<link type="text/css" rel="stylesheet" media="all" href="http://stage.processpedia.cs.pg.com/sites/all/modules/megamenu/megamenu-skins.css?5" />
+<link type="text/css" rel="stylesheet" media="all" href="http://stage.processpedia.cs.pg.com/sites/all/modules/panels/css/panels.css?5" />
+<link type="text/css" rel="stylesheet" media="all" href="http://stage.processpedia.cs.pg.com/sites/all/modules/extlink/extlink.css?5" />
+<link type="text/css" rel="stylesheet" media="all" href="http://stage.processpedia.cs.pg.com/sites/all/modules/cck/modules/fieldgroup/fieldgroup.css?5" />
+<link type="text/css" rel="stylesheet" media="all" href="http://stage.processpedia.cs.pg.com/sites/all/modules/wysiwyg/editors/css/tinymce-3.css?5" />
+<link type="text/css" rel="stylesheet" media="all" href="http://stage.processpedia.cs.pg.com/sites/all/themes/processpedia/css/style.css?5" />
+<link type="text/css" rel="stylesheet" media="all" href="http://stage.processpedia.cs.pg.com/sites/all/themes/processpedia/css/dropdown/dropdown.css?5" />
+<link type="text/css" rel="stylesheet" media="all" href="http://stage.processpedia.cs.pg.com/sites/all/themes/processpedia/css/dropdown/dropdown.linear.columnar.css?5" />
+<link type="text/css" rel="stylesheet" media="all" href="http://stage.processpedia.cs.pg.com/sites/all/themes/processpedia/css/dropdown/dropdown.linear.css?5" />
+<link type="text/css" rel="stylesheet" media="all" href="http://stage.processpedia.cs.pg.com/sites/all/themes/processpedia/css/dropdown/themes/menu_img/default.advanced.css?5" />
+<link type="text/css" rel="stylesheet" media="all" href="http://stage.processpedia.cs.pg.com/sites/all/themes/processpedia/css/dropdown/themes/menu_img/default.css?5" />
+<link type="text/css" rel="stylesheet" media="all" href="http://stage.processpedia.cs.pg.com/sites/all/themes/processpedia/css/screen.css?5" />
+<link type="text/css" rel="stylesheet" media="all" href="http://stage.processpedia.cs.pg.com/sites/all/themes/processpedia/css/playbook.css?5" />
+<link type="text/css" rel="stylesheet" media="all" href="http://stage.processpedia.cs.pg.com/sites/all/themes/processpedia/css/system-menus.css?5" />
+<link type="text/css" rel="stylesheet" media="all" href="http://stage.processpedia.cs.pg.com/sites/all/themes/processpedia/css/jquery-ui.css?5" />
+<link type="text/css" rel="stylesheet" media="all" href="http://stage.processpedia.cs.pg.com/sites/all/themes/processpedia/css/jquery.treeview.css?5" />
+  <link type="text/css" rel="stylesheet" media="all" href="http://stage.processpedia.cs.pg.com/sites/all/themes/processpedia/css/jquery-ui-1.8.4.custom.css" />
+   <link type="text/css" rel="stylesheet" media="all" href="/public/css/ppeditor.css" /> 
+ <!--<script type="text/javascript" src="/js/jquery1_7_1_min.js"></script>
+  <script type="text/javascript">
+    var $jq = jQuery.noConflict(true);
+  </script> -->
+  <!-- <script type="text/javascript" src="/js/jquery-ui-1.8.4.custom.min.js"></script> -->
+  <script type="text/javascript" src="http://stage.processpedia.cs.pg.com/misc/jquery.js?5"></script>
+<script type="text/javascript" src="http://stage.processpedia.cs.pg.com/misc/drupal.js?5"></script>
+<!--<script type="text/javascript" src="http://stage.processpedia.cs.pg.com/sites/all/modules/wysiwyg/wysiwyg.init.js?5"></script>
+<script type="text/javascript" src="http://stage.processpedia.cs.pg.com/sites/all/modules/beautytips/other_libs/excanvas_r3/excanvas.compiled.js?5"></script>
+<script type="text/javascript" src="http://stage.processpedia.cs.pg.com/sites/all/modules/beautytips/js/jquery.bt.min.js?5"></script>
+<script type="text/javascript" src="http://stage.processpedia.cs.pg.com/sites/all/modules/beautytips/js/beautytips.js?5"></script>
+<script type="text/javascript" src="http://stage.processpedia.cs.pg.com/sites/all/modules/panels/js/panels.js?5"></script>
+<script type="text/javascript" src="http://stage.processpedia.cs.pg.com/sites/all/modules/poormanscron/poormanscron.js?5"></script>
+<script type="text/javascript" src="http://stage.processpedia.cs.pg.com/sites/all/modules/extlink/extlink.js?5"></script>
+<script type="text/javascript" src="http://stage.processpedia.cs.pg.com/misc/jquery.form.js?5"></script>
+<script type="text/javascript" src="http://stage.processpedia.cs.pg.com/misc/ahah.js?5"></script>
+<script type="text/javascript" src="http://stage.processpedia.cs.pg.com/sites/all/modules/filefield/filefield.js?5"></script>
+<script type="text/javascript" src="http://stage.processpedia.cs.pg.com/misc/textarea.js?5"></script>
+<script type="text/javascript" src="http://stage.processpedia.cs.pg.com/sites/all/libraries/tinymce/jscripts/tiny_mce/tiny_mce.js?5"></script>
+<script type="text/javascript" src="http://stage.processpedia.cs.pg.com/sites/all/modules/wysiwyg/editors/js/tinymce-3.js?5"></script>
+<script type="text/javascript" src="http://stage.processpedia.cs.pg.com/sites/all/modules/wysiwyg/editors/js/none.js?5"></script>
+<script type="text/javascript" src="http://stage.processpedia.cs.pg.com/misc/tableheader.js?5"></script>
+<script type="text/javascript" src="http://stage.processpedia.cs.pg.com/sites/all/modules/book_helper/book_helper.js?5"></script>
+<script type="text/javascript" src="http://stage.processpedia.cs.pg.com/misc/autocomplete.js?5"></script>
+<script type="text/javascript" src="http://stage.processpedia.cs.pg.com/misc/collapse.js?5"></script>-->
+<script type="text/javascript" src="http://stage.processpedia.cs.pg.com/sites/all/themes/processpedia/js/jquery1_7_1_min.js?5"></script>
+<script type="text/javascript" src="http://stage.processpedia.cs.pg.com/sites/all/themes/processpedia/js/jquery-variable.js?5"></script>
+<script type="text/javascript" src="http://stage.processpedia.cs.pg.com/sites/all/themes/processpedia/js/jquery.nestedAccordion.js?5"></script>
+<script type="text/javascript" src="http://stage.processpedia.cs.pg.com/sites/all/themes/processpedia/js/jquery.cookie.js?5"></script>
+<script type="text/javascript" src="http://stage.processpedia.cs.pg.com/sites/all/themes/processpedia/js/jquery.treeview.js?5"></script>
+<script type="text/javascript" src="http://stage.processpedia.cs.pg.com/sites/all/themes/processpedia/js/demo.js?5"></script>
+<script type="text/javascript" src="http://stage.processpedia.cs.pg.com/sites/all/themes/processpedia/js/function.js?5"></script>
+<script type="text/javascript">
+<!--//--><![CDATA[//><!--
+jQuery.extend(Drupal.settings, { "basePath": "/", "beautytips": { "acronym": { "positions": [ "top", "bottom" ], "fill": "#FFFF82", "padding": 15, "strokeStyle": "#383838", "strokeWidth": 1, "spikeLength": 65, "spikeGirth": 40, "cornerRadius": 5, "centerPointX": 0.9, "cssStyles": { "color": "#000000", "fontFamily": "arial", "fontSize": "13px" }, "cssSelect": "acronym", "list": [ "positions", "fill", "padding", "strokeStyle", "strokeWidth", "spikeLength", "spikeGirth", "cornerRadius", "centerPointX", "cssStyles" ] }, ".beautytips": { "positions": [ "top", "bottom" ], "fill": "#FFFF82", "padding": 15, "strokeStyle": "#383838", "strokeWidth": 1, "spikeLength": 65, "spikeGirth": 40, "cornerRadius": 5, "centerPointX": 0.9, "cssStyles": { "color": "#000000", "fontFamily": "arial", "fontSize": "13px" }, "cssSelect": ".beautytips", "list": [ "positions", "fill", "padding", "strokeStyle", "strokeWidth", "spikeLength", "spikeGirth", "cornerRadius", "centerPointX", "cssStyles" ] } }, "cronCheck": 1391329754, "extlink": { "extTarget": "_blank", "extClass": 0, "extSubdomains": 1, "extExclude": "", "extInclude": "", "extAlert": 0, "extAlertText": "This link will take you to an external web site. We are not responsible for their content.", "mailtoClass": 0 }, "ahah": { "edit-book-bid": { "url": "/book/js/form", "event": "change", "keypress": null, "wrapper": "edit-book-plid-wrapper", "selector": "#edit-book-bid", "effect": "slide", "method": "replace", "progress": { "type": "throbber" }, "button": false }, "edit-field-attach-0-filefield-upload": { "url": "/filefield/ahah/book/field_attach/0", "event": "mousedown", "keypress": true, "wrapper": "edit-field-attach-0-ahah-wrapper", "selector": "#edit-field-attach-0-filefield-upload", "effect": "fade", "method": "replace", "progress": { "type": "throbber" }, "button": { "op": "Upload" } }, "edit-field-attach-0-filefield-remove": { "url": "/filefield/ahah/book/field_attach/0", "event": "mousedown", "keypress": true, "wrapper": "edit-field-attach-0-ahah-wrapper", "selector": "#edit-field-attach-0-filefield-remove", "effect": "fade", "method": "replace", "progress": { "type": "throbber" }, "button": { "field_attach_0_filefield_remove": "Remove" } } }, "wysiwyg": { "configs": { "tinymce": { "format2": { "button_tile_map": true, "document_base_url": "/", "mode": "none", "plugins": "advimage,autosave,contextmenu,emotions,layer,paste,searchreplace,style,table", "theme": "advanced", "width": "100%", "strict_loading_mode": true, "convert_urls": false, "entities": "160,nbsp,173,shy,8194,ensp,8195,emsp,8201,thinsp,8204,zwnj,8205,zwj,8206,lrm,8207,rlm", "apply_source_formatting": 1, "convert_fonts_to_spans": 1, "language": "en", "paste_auto_cleanup_on_paste": 0, "preformatted": 0, "remove_linebreaks": 1, "verify_html": 1, "content_css": "sites/all/themes/processpedia/css/processnet.css", "extended_valid_elements": "img[src|alt|title|align|width|height|hspace|vspace|border|style|class|onmouseover|onmouseout|id|name],font[face|size|color|style],span[class|align|style]", "theme_advanced_resize_horizontal": false, "theme_advanced_resizing_use_cookie": false, "theme_advanced_path_location": "bottom", "theme_advanced_resizing": 1, "theme_advanced_toolbar_location": "top", "theme_advanced_toolbar_align": "left", "theme_advanced_blockformats": "address,pre,h5,h6,div,em", "theme_advanced_buttons1": "bold,italic,underline,strikethrough,justifyleft,justifycenter,justifyright,justifyfull,bullist,numlist,outdent,indent,undo,redo,link,unlink,image,cleanup,forecolor,backcolor,sup,sub,blockquote,code,hr,cut,copy,paste,removeformat,charmap,emotions,formatselect,fontselect,fontsizeselect,styleselect,insertlayer,pasteword,replace,styleprops,tablecontrols", "theme_advanced_buttons2": "", "theme_advanced_buttons3": "" }, "format3": { "button_tile_map": true, "document_base_url": "/", "mode": "none", "plugins": "", "theme": "advanced", "width": "100%", "strict_loading_mode": true, "convert_urls": false, "entities": "160,nbsp,173,shy,8194,ensp,8195,emsp,8201,thinsp,8204,zwnj,8205,zwj,8206,lrm,8207,rlm", "theme_advanced_resize_horizontal": false, "theme_advanced_resizing_use_cookie": false, "theme_advanced_path_location": "bottom", "theme_advanced_resizing": 1, "theme_advanced_toolbar_location": "top", "theme_advanced_toolbar_align": "left" } } }, "showToggle": 0, "editorBasePath": "/sites/all/libraries/tinymce/jscripts/tiny_mce", "execMode": "", "disable": "Disable rich-text", "enable": "Enable rich-text", "plugins": { "format2": { "native": [  ], "drupal": [  ] }, "format3": { "native": [  ], "drupal": [  ] } } } });
+//--><!]]>
+</script>
+<script type="text/javascript">
+<!--//--><![CDATA[//><!--
+if (Drupal.jsEnabled) { $(document).ready(function() { $('#edit-book-pick-book').css('display', 'none'); }); }
+//--><!]]>
+</script>
+</head>
+<div class="header2">
+						<div class="header-logo">
+						<div id="logo-title">
+                              <a href="http://stage.processpedia.cs.pg.com/home" title="home"> <img src="http://stage.processpedia.cs.pg.com/sites/all/themes/processpedia/whitejazz_logo.png" alt="Home" id="logo" /> </a>
+                          </div>
+						</div>
+												<div class="header-user">
+						<!--<p>Welcome, MTAdmin</p>-->
+						</div>
+											
+												<div class="header-search"> 
+							<span>
+									<div class="wid_s">
+										<div class="left_l"></div>
+										<div id="search" class="container-inline">
+										</div>
+											
+											<div class="mid_s">
+												<div class="searc_box">
+													<form action="/node/1240/edit"  accept-charset="UTF-8" method="post" id="search-theme-form">
+<div><div id="search" class="container-inline">
+  <div class="form-item" id="edit-search-theme-form-1-wrapper">
+ <input type="text" maxlength="128" name="search_theme_form" id="edit-search-theme-form-1" size="15" value="Search Processpedia" class="form-text textbutt" onblur="if (this.value == &#039;&#039;) {this.value = &#039;Search Processpedia&#039;;} ;" onfocus="if (this.value == &#039;Search Processpedia&#039;) {this.value = &#039;&#039;;} ;" />
+</div>
+<input type="image" name="op" value="Search" id="edit-submit-1"  class="form-submit button" src="http://stage.processpedia.cs.pg.com/sites/all/themes/processpedia/images/search.png" />
+<input type="hidden" name="form_build_id" id="form-f5536d13b628e47a3eb0de92edf04f07" value="form-f5536d13b628e47a3eb0de92edf04f07"  />
+<input type="hidden" name="form_token" id="edit-search-theme-form-form-token" value="ac6e92121e6e83ddd0e0ff7cc76b21cb"  />
+<input type="hidden" name="form_id" id="edit-search-theme-form" value="search_theme_form"  />
+</div>
+
+</div></form>
+ 
+												</div>
+											</div> 
+										
+										<div class="right_l"></div>
+									</div>
+									<div style="clear:both"></div>
+							</span>
+						</div> 
+											
+					</div>
+																<div >
+							<ul class="bg_m">
+								<li>
+									<div id="block-megamenu-0" class="clear-block block block-megamenu">
+
+
+  <div class="content"><ul id="megamenu-primary-links" class="megamenu-menu horizontal megamenu-skin-minimal"><li id="megamenu-mlid-476" class="megamenu-parent megamenu-parent-0 odd half-1 leaf-0 first first"><h2 class="megamenu-parent-title"><a href="/home" class=" menu-476">HOME</a></h2></li>
+<li id="megamenu-mlid-468" class="megamenu-parent megamenu-parent-1 even half-1 leaf-1"><h2 class="megamenu-parent-title"><a href="/playbook" class=" menu-468">PLAYBOOKS</a></h2><ul class="megamenu-bin megamenu-slots-columnar"><li id="megamenu-mlid-484" class="megamenu-slot megamenu-slot-0 odd half-1 leaf-0 first first"><h3 class="megamenu-slot-title"><a href="/home" class=" menu-484">Digital Business</a></h3> <span class="bor_der"></span><ul class="megamenu-items "><li id="megamenu-mlid-1235" class="megamenu-item megamenu-item-0 odd half-1 leaf-0 first first"><a href="/playbook/cms" class=" menu-1235">CMS</a></li>
+<li id="megamenu-mlid-925" class="megamenu-item megamenu-item-1 even half-1 leaf-1"><a href="/playbook/mApps" class=" menu-925">Mobile Apps</a></li>
+<li id="megamenu-mlid-616" class="megamenu-item megamenu-item-2 odd half-1 leaf-2"><a href="/playbook/mobileweb" class=" menu-616">Mobile Web</a></li>
+<li id="megamenu-mlid-763" class="megamenu-item megamenu-item-3 even half-1 leaf-3"><a href="/playbook/social" class=" menu-763">Social</a></li>
+<li id="megamenu-mlid-725" class="megamenu-item megamenu-item-4 odd half-2 leaf-4"><a href="/playbook/webots" class=" menu-725">Web OTS Dev</a></li>
+<li id="megamenu-mlid-1731" class="megamenu-item megamenu-item-5 even half-2 leaf-5"><a href="/playbook/eStore" class=" menu-1731">eStore E2E</a></li>
+<li id="megamenu-mlid-1814" class="megamenu-item megamenu-item-6 odd half-2 leaf-6"><a href="/playbook/eCommerce" class=" menu-1814">eCommerce Solutions</a></li>
+<li id="megamenu-mlid-1966" class="megamenu-item megamenu-item-7 even half-2 leaf-7 last last"><a href="/playbook/webanalytics%20" class=" menu-1966">Web Analytics</a></li>
+</ul></li>
+<li id="megamenu-mlid-485" class="megamenu-slot megamenu-slot-1 even half-2 leaf-1 last last"><h3 class="megamenu-slot-title"><a href="/home" class=" menu-485">Consumer Data</a></h3> <span class="bor_der"></span><ul class="megamenu-items "><li id="megamenu-mlid-1627" class="megamenu-item megamenu-item-0 odd half-1 leaf-0 first first"><a href="/playbook/c2" class=" menu-1627">C2</a></li>
+<li id="megamenu-mlid-1007" class="megamenu-item megamenu-item-1 even half-1 leaf-1"><a href="/playbook/profileregistration" class=" menu-1007">Profile Registration</a></li>
+<li id="megamenu-mlid-1919" class="megamenu-item megamenu-item-2 odd half-2 leaf-2"><a href="/playbook/ems" class=" menu-1919">eMail Messaging</a></li>
+<li id="megamenu-mlid-1634" class="megamenu-item megamenu-item-3 even half-2 leaf-3 last last"><a href="/playbooks/loyaltyconnect" class=" menu-1634">Loyalty Connect</a></li>
+</ul></li>
+</ul></li>
+<li id="megamenu-mlid-478" class="megamenu-parent megamenu-parent-2 odd half-1 leaf-2"><h2 class="megamenu-parent-title"><a href="/processguide" class=" menu-478">PROCESS GUIDES</a></h2><ul class="megamenu-bin megamenu-slots-columnar"><li id="megamenu-mlid-488" class="megamenu-slot megamenu-slot-0 odd half-1 leaf-0 first first last"><h3 class="megamenu-slot-title"><a href="/home" class=" menu-488">Guides</a></h3> <span class="bor_der"></span><ul class="megamenu-items "><li id="megamenu-mlid-1626" class="megamenu-item megamenu-item-0 odd half-1 leaf-0 first first"><a href="/processguide/cdn" class=" menu-1626">CDN</a></li>
+<li id="megamenu-mlid-598" class="megamenu-item megamenu-item-1 even half-1 leaf-1"><a href="/processguide/html5" class=" menu-598">HTML5 for Mobile</a></li>
+<li id="megamenu-mlid-1000" class="megamenu-item megamenu-item-2 odd half-2 leaf-2"><a href="/processguide/responsivewebdesign" class=" menu-1000">Responsive Web Design</a></li>
+<li id="megamenu-mlid-698" class="megamenu-item megamenu-item-3 even half-2 leaf-3 last last"><a href="/processguide/web-accessibility" class=" menu-698">Web Accessibility</a></li>
+</ul></li>
+</ul></li>
+<li id="megamenu-mlid-1193" class="megamenu-parent megamenu-parent-3 even half-1 leaf-3"><h2 class="megamenu-parent-title"><a href="/tql" class=" menu-1193">TOTAL QUALITY LAUNCH</a></h2></li>
+<li id="megamenu-mlid-1205" class="megamenu-parent megamenu-parent-4 odd half-1 leaf-4"><h2 class="megamenu-parent-title"><a href="/webdevprocess" class=" menu-1205">WEB DEV PROCESS</a></h2></li>
+<li id="megamenu-mlid-2013" class="megamenu-parent megamenu-parent-5 even half-1 leaf-5"><h2 class="megamenu-parent-title"><a href="/webopsprocess" class=" menu-2013">WEB OPS PROCESS</a></h2></li>
+<li id="megamenu-mlid-2010" class="megamenu-parent megamenu-parent-6 odd half-2 leaf-6"><h2 class="megamenu-parent-title"><a href="/documents" class=" menu-2010">DOCUMENTS</a></h2></li>
+<li id="megamenu-mlid-1917" class="megamenu-parent megamenu-parent-7 even half-2 leaf-7"><h2 class="megamenu-parent-title"><a href="/training" class=" menu-1917">TRAINING</a></h2></li>
+<li id="megamenu-mlid-480" class="megamenu-parent megamenu-parent-8 odd half-2 leaf-8"><h2 class="megamenu-parent-title"><a href="/home" class=" menu-480">HELP</a></h2><ul class="megamenu-bin megamenu-slots-columnar"><li id="megamenu-mlid-489" class="megamenu-slot megamenu-slot-0 odd half-1 leaf-0 first first last"><h3 class="megamenu-slot-title"><a href="/home" class=" menu-489">Help List</a></h3> <span class="bor_der"></span><ul class="megamenu-items "><li id="megamenu-mlid-490" class="megamenu-item megamenu-item-0 odd half-1 leaf-0 first first"><a href="/help/about-processpedia" class=" menu-490">About Processpedia</a></li>
+<li id="megamenu-mlid-748" class="megamenu-item megamenu-item-1 even half-1 leaf-1"><a href="/help/contact-us" class=" menu-748">Contact us</a></li>
+<li id="megamenu-mlid-528" class="megamenu-item megamenu-item-2 odd half-2 leaf-2 last last"><a href="/help/sitemap" class=" menu-528">Site Map</a></li>
+</ul></li>
+</ul></li>
+<li id="megamenu-mlid-493" class="megamenu-parent megamenu-parent-9 even half-2 leaf-9"><h2 class="megamenu-parent-title"><a href="/admin" class=" menu-493">ADMINISTRATOR</a></h2><ul class="megamenu-bin megamenu-slots-columnar"><li id="megamenu-mlid-1162" class="megamenu-slot megamenu-slot-0 odd half-1 leaf-0 first first last"><h3 class="megamenu-slot-title"><a href="/admin/reports" class=" menu-1162">REPORTS</a></h3> <span class="bor_der"></span><ul class="megamenu-items "><li id="megamenu-mlid-1163" class="megamenu-item megamenu-item-0 odd half-1 leaf-0 first first"><a href="/admin/reports/hits" class=" menu-1163">Recent Hits</a></li>
+<li id="megamenu-mlid-1164" class="megamenu-item megamenu-item-1 even half-1 leaf-1"><a href="/admin/reports/pages" class=" menu-1164">Top Pages</a></li>
+<li id="megamenu-mlid-1165" class="megamenu-item megamenu-item-2 odd half-2 leaf-2 last last"><a href="/admin/reports/visitors" class=" menu-1165">Top Visitors</a></li>
+</ul></li>
+</ul></li>
+<li id="megamenu-mlid-481" class="megamenu-parent megamenu-parent-10 odd half-2 leaf-10 last last"><h2 class="megamenu-parent-title"><a href="/logout" class=" menu-481">LOGOUT</a></h2></li>
+</ul></div>
+</div>
+								</li>
+							</ul>
+						</div>
+				<div class="cls"></div>
+					<div class="content">
+					<div class="brd"><a href="/" title="Home">Home</a>  >  <a href="/node" title="Node ">Node </a>  >  <a href="/node/1240" title="1240 ">1240 </a>  >  Edit </div>						<div class="p_content">
+						<table width="100%" cellspacing="0" cellpadding="0" border="0">
+							<tr>
+															<td class="pleft_menu" valign="top">
+									<div id="side">
+								         <div id="exp">Expand</div>
+											<ul id="navigation">
+											  <li>
+											 <div id="block-user-1" class="clear-block block block-user">
+
+  <h2>MTAdmin</h2>
+
+  <div class="content"><ul><li class="expanded first"><a href="/admin">Administer</a><ul><li class="expanded first"><a href="/admin/content" title="Manage your site&#039;s content.">Content management</a><ul><li class="leaf first"><a href="/admin/content/backup_migrate" title="Backup/restore your database or migrate data to or from another Drupal site.">Backup and Migrate</a></li>
+<li class="leaf"><a href="/admin/content/book" title="Manage your site&#039;s book outlines.">Books</a></li>
+<li class="leaf"><a href="/admin/content/comment" title="List and edit site comments and the comment moderation queue.">Comments</a></li>
+<li class="leaf"><a href="/admin/content/node" title="View, edit, and delete your site&#039;s content.">Content</a></li>
+<li class="leaf"><a href="/admin/content/types" title="Manage posts by content type, including default status, front page promotion, etc.">Content types</a></li>
+<li class="leaf"><a href="/admin/content/node-settings" title="Control posting behavior, such as teaser length, requiring previews before posting, and the number of posts on the front page.">Post settings</a></li>
+<li class="leaf"><a href="/admin/content/rss-publishing" title="Configure the number of items per feed and whether feeds should be titles/teasers/full-text.">RSS publishing</a></li>
+<li class="leaf"><a href="/admin/content/taxonomy" title="Manage tagging, categorization, and classification of your content.">Taxonomy</a></li>
+<li class="leaf last"><a href="/admin/content/webform" title="View and edit all the available webforms on your site.">Webforms</a></li>
+</ul></li>
+<li class="expanded"><a href="/admin/build" title="Control how your site looks and feels.">Site building</a><ul><li class="leaf first"><a href="/admin/build/block" title="Configure what block content appears in your site&#039;s sidebars and other regions.">Blocks</a></li>
+<li class="leaf"><a href="/admin/build/bulkexport" title="Bulk-export multiple CTools-handled data objects to code.">Bulk Exporter</a></li>
+<li class="leaf"><a href="/admin/build/megamenu" title="Make megamenu (aka megadropdowns) from a Drupal menu">Mega menus</a></li>
+<li class="expanded"><a href="/admin/build/menu" title="Control your site&#039;s navigation menu, primary links and secondary links. as well as rename and reorganize menu items.">Menus</a><ul><li class="leaf first"><a href="/admin/build/menu-customize/navigation">Navigation</a></li>
+<li class="leaf"><a href="/admin/build/menu-customize/primary-links">Primary links</a></li>
+<li class="leaf last"><a href="/admin/build/menu-customize/secondary-links">Secondary links</a></li>
+</ul></li>
+<li class="leaf"><a href="/admin/build/panel-mini" title="Create and administer mini panels (panels exposed as blocks).">Mini panels</a></li>
+<li class="leaf"><a href="/admin/build/modules" title="Enable or disable add-on modules for your site.">Modules</a></li>
+<li class="leaf"><a href="/admin/build/pages" title="Add, edit and remove overridden system pages and user defined pages from the system.">Pages</a></li>
+<li class="leaf"><a href="/admin/build/panels" title="Administer items related to the Panels module.">Panels</a></li>
+<li class="leaf"><a href="/admin/build/securepages" title="Configure which pages are and are not to be viewed in SSL">Secure Pages</a></li>
+<li class="leaf"><a href="/admin/build/themes" title="Change which theme your site uses or allows users to set.">Themes</a></li>
+<li class="leaf"><a href="/admin/build/path" title="Change your site&#039;s URL paths by aliasing them.">URL aliases</a></li>
+<li class="leaf"><a href="/admin/build/path-redirect" title="Redirect users from one URL to another.">URL redirects</a></li>
+<li class="leaf"><a href="/admin/build/views" title="Views are customized lists of content on your system; they are highly configurable and give you control over how lists of content are presented.">Views</a></li>
+<li class="leaf last"><a href="/admin/build/workflow" title="Allows the creation and assignment of arbitrary workflows to node types.">Workflow</a></li>
+</ul></li>
+<li class="expanded"><a href="/admin/settings" title="Adjust basic site configuration options.">Site configuration</a><ul><li class="leaf first"><a href="/admin/settings/actions" title="Manage the actions defined for your site.">Actions</a></li>
+<li class="leaf"><a href="/admin/settings/admin" title="Settings for how your administrative pages should look.">Administration theme</a></li>
+<li class="leaf"><a href="/admin/settings/autologout" title="Manage the Automated Logout features">Automated logout</a></li>
+<li class="leaf"><a href="/admin/settings/beautytips">BeautyTips</a></li>
+<li class="leaf"><a href="/admin/settings/ctools_plugin_example" title="Demonstration code, advanced help, and a demo panel to show how to build ctools plugins.">CTools plugin example</a></li>
+<li class="leaf"><a href="/admin/settings/clean-urls" title="Enable or disable clean URLs for your site.">Clean URLs</a></li>
+<li class="leaf"><a href="/admin/settings/date-time" title="Settings for how Drupal displays date and time, as well as the system&#039;s default timezone.">Date and time</a></li>
+<li class="leaf"><a href="/admin/settings/error-reporting" title="Control how Drupal deals with errors including 403/404 errors as well as PHP error reporting.">Error reporting</a></li>
+<li class="leaf"><a href="/admin/settings/extlink" title="Alter the display of external links on the site.">External links</a></li>
+<li class="leaf"><a href="/admin/settings/file-system" title="Tell Drupal where to store uploaded files and how they are accessed.">File system</a></li>
+<li class="leaf"><a href="/admin/settings/front" title="Specify a unique layout or splash page based on role type - override your HOME and breadcrumb links - display a custom mission style notice for users who haven&#039;t visited in a while - disable site and display a &#039;temporarily offline&#039; message.">Front page</a></li>
+<li class="leaf"><a href="/admin/settings/image-toolkit" title="Choose which image toolkit to use if you have installed optional toolkits.">Image toolkit</a></li>
+<li class="leaf"><a href="/admin/settings/filters" title="Configure how content input by users is filtered, including allowed HTML tags. Also allows enabling of module-provided filters.">Input formats</a></li>
+<li class="expanded"><a href="/admin/settings/logging" title="Settings for logging and alerts modules. Various modules can route Drupal&#039;s system events to different destination, such as syslog, database, email, ...etc.">Logging and alerts</a><ul><li class="leaf last"><a href="/admin/settings/logging/dblog" title="Settings for logging to the Drupal database logs. This is the most common method for small to medium sites on shared hosting. The logs are viewable from the admin pages.">Database logging</a></li>
+</ul></li>
+<li class="leaf"><a href="/admin/settings/phpexcel">PHPExcel settings</a></li>
+<li class="leaf"><a href="/admin/settings/performance" title="Enable or disable page caching for anonymous users and set CSS and JS bandwidth optimization options.">Performance</a></li>
+<li class="leaf"><a href="/admin/settings/popups" title="Configure the page-in-a-dialog behavior.">Popups</a></li>
+<li class="leaf"><a href="/admin/settings/search" title="Configure relevance settings for search and other indexing options">Search settings</a></li>
+<li class="leaf"><a href="/admin/settings/site-information" title="Change basic site information, such as the site name, slogan, e-mail address, mission, front page and more.">Site information</a></li>
+<li class="leaf"><a href="/admin/settings/site-maintenance" title="Take the site off-line for maintenance or bring it back online.">Site maintenance</a></li>
+<li class="leaf"><a href="/admin/settings/sitemap" title="Control what should be displayed on the site map.">Site map</a></li>
+<li class="leaf"><a href="/admin/settings/subscriptions" title="Enables site settings for user subscriptions.">Subscriptions</a></li>
+<li class="leaf"><a href="/admin/settings/webform" title="Global configuration of webform functionality.">Webform</a></li>
+<li class="leaf"><a href="/admin/settings/wysiwyg" title="Configure client-side editors.">Wysiwyg</a></li>
+<li class="leaf last"><a href="/admin/settings/getid3" title="Configure settings associated with getID3().">getID3()</a></li>
+</ul></li>
+<li class="expanded"><a href="/admin/user" title="Manage your site&#039;s users, groups and access to site features.">User management</a><ul><li class="leaf first"><a href="/admin/user/rules" title="List and create rules to disallow usernames, e-mail addresses, and IP addresses.">Access rules</a></li>
+<li class="leaf"><a href="/admin/user/login_destination" title="Control where users are redirected to, once they login.">Login Destination</a></li>
+<li class="leaf"><a href="/admin/user/permissions" title="Determine access to features by selecting permissions for roles.">Permissions</a></li>
+<li class="leaf"><a href="/admin/user/roles" title="List, edit, or add user roles.">Roles</a></li>
+<li class="leaf"><a href="/admin/user/settings" title="Configure default behavior of users, including registration requirements, e-mails, and user pictures.">User settings</a></li>
+<li class="leaf last"><a href="/admin/user/user" title="List, add, and edit users.">Users</a></li>
+</ul></li>
+<li class="expanded"><a href="/admin/reports" title="View reports from system logs and other status information.">Reports</a><ul><li class="leaf first"><a href="/admin/reports/dblog" title="View events that have recently been logged.">Recent log entries</a></li>
+<li class="leaf"><a href="/admin/reports/exporttoexcel"></a></li>
+<li class="leaf"><a href="/admin/reports/exportvisitors"></a></li>
+<li class="leaf"><a href="/admin/reports/exportpages"></a></li>
+<li class="leaf"><a href="/admin/reports/hits" title="View pages that have recently been visited.">Recent hits</a></li>
+<li class="leaf"><a href="/admin/reports/access-denied" title="View &#039;access denied&#039; errors (403s).">Top &#039;access denied&#039; errors</a></li>
+<li class="leaf"><a href="/admin/reports/page-not-found" title="View &#039;page not found&#039; errors (404s).">Top &#039;page not found&#039; errors</a></li>
+<li class="leaf"><a href="/admin/reports/referrers" title="View top referrers.">Top referrers</a></li>
+<li class="leaf"><a href="/admin/reports/search" title="View most popular search phrases.">Top search phrases</a></li>
+<li class="leaf"><a href="/admin/reports/pages" title="View pages that have been hit frequently.">Top pages</a></li>
+<li class="leaf"><a href="/admin/reports/visitors" title="View visitors that hit many pages.">Top visitors</a></li>
+<li class="leaf"><a href="/admin/reports/settings" title="Control details about what and how your site logs.">Access log settings</a></li>
+<li class="leaf last"><a href="/admin/reports/status" title="Get a status report about your site&#039;s operation and any detected problems.">Status report</a></li>
+</ul></li>
+<li class="leaf"><a href="/admin/advanced_help">Advanced help</a></li>
+<li class="leaf"><a href="/admin/help_example">Example help</a></li>
+<li class="leaf last"><a href="/admin/help">Help</a></li>
+</ul></li>
+<li class="expanded last"><a href="/node/add" title="">Create content</a><ul><li class="leaf first"><a href="/node/add/attachments" title="The content type to hold all the attachments">Attachments</a></li>
+<li class="leaf"><a href="/node/add/book" title="A book page is a page of content, organized into a collection of related entries collectively known as a book. A book page automatically displays links to adjacent pages, providing a simple navigation system for organizing and reviewing structured content.">Book page</a></li>
+<li class="leaf"><a href="/node/add/document" title="This is used to attach the documents.">Document</a></li>
+<li class="leaf"><a href="/node/add/page" title="A page, similar in form to a story, is a simple method for creating and displaying information that rarely changes, such as an &quot;About us&quot; section of a website. By default, a page entry does not allow visitor comments and is not featured on the site&#039;s initial home page.">Page</a></li>
+<li class="leaf"><a href="/node/add/panel" title="A panel layout broken up into rows and columns.">Panel</a></li>
+<li class="leaf"><a href="/node/add/process" title="The Process documents">Process</a></li>
+<li class="leaf"><a href="/node/add/story" title="A story, similar in form to a page, is ideal for creating and displaying content that informs or engages website visitors. Press releases, site announcements, and informal blog-like entries may all be created with a story entry. By default, a story entry is automatically featured on the site&#039;s initial home page, and provides the ability to post comments.">Story</a></li>
+<li class="leaf"><a href="/node/add/webeops-documents">WebOps Documents</a></li>
+<li class="leaf last"><a href="/node/add/webform" title="Create a new form or questionnaire accessible to users. Submission results and statistics are recorded and accessible to privileged users.">Webform</a></li>
+</ul></li>
+</ul></div>
+</div>
+<div id="block-book_menu_tree_custom-0" class="clear-block block block-book_menu_tree_custom">
+
+
+  <div class="content"><ul><li class="expanded first"><a href="/playbook/mApps#introduction">INTRODUCTION</a><ul><li class="expanded last"><a href="/playbook/mApps#landscape">Landscape</a><ul><li class="leaf first"><a href="/playbook/mApps#website">App vs. website?</a></li>
+<li class="leaf"><a href="/playbook/mApps#ingredientsMobileApp">Ingredients for a &#039;Great&#039; Mobile Application</a></li>
+<li class="leaf"><a href="/playbook/mApps#pgmapp">P&amp;G mApp Presences</a></li>
+<li class="leaf last"><a href="/playbook/mApps#volume">Volume Forecast</a></li>
+</ul></li>
+</ul></li>
+<li class="expanded"><a href="/playbook/mApps#platform">PLATFORM STRATEGY</a><ul><li class="leaf first"><a href="/playbook/mApps#phase1">Phase I Pilot Scope</a></li>
+<li class="leaf"><a href="/playbook/mApps#phase2">Phase II Pilot Scope</a></li>
+<li class="leaf"><a href="/playbook/mApps#mobile">Mobile Application Model</a></li>
+<li class="leaf"><a href="/playbook/mApps#lifecycle">Lifecycle / SLA timings</a></li>
+<li class="leaf"><a href="/playbook/mApps#available">Platforms Available</a></li>
+<li class="expanded last"><a href="/playbook/mApps#vendors">Vendors Available</a><ul><li class="expanded first"><a href="/playbook/mApps#information">Vendor Information</a><ul><li class="leaf last"><a href="/playbook/mApps#useonlygbs">Use Only CBS-Certified Vendors</a></li>
+</ul></li>
+<li class="expanded last"><a href="/playbook/mApps#vendorselection">Vendor Selection</a><ul><li class="leaf first"><a href="/playbook/mApps#development">Development Lead Contacts</a></li>
+<li class="leaf last"><a href="/playbook/mApps#complexity">Complexity Calculator</a></li>
+</ul></li>
+</ul></li>
+</ul></li>
+<li class="expanded"><a href="/playbook/mApps/implementation">IMPLEMENTATION</a><ul><li class="expanded first"><a href="/node/1602">Mobile Application Requirements</a><ul><li class="leaf last"><a href="/playbook/mApps#mobileAppReqlaunch">Mandatory Requirements for Mobile Application Launch</a></li>
+</ul></li>
+<li class="leaf"><a href="/playbook/mApps/implementation#requestnew">Request new mApp</a></li>
+<li class="expanded"><a href="/playbook/mApps/implementation#psacompl">Privacy and Security Compliance</a><ul><li class="leaf last"><a href="/playbook/mApps/implementation#psaCompScan">Privacy/Security Compliance Scanning</a></li>
+</ul></li>
+<li class="leaf"><a href="/playbook/mApps/implementation#e2e">E2E Request-to-Delivery</a></li>
+<li class="leaf"><a href="/playbook/mApps/implementation#reqdelivery">Request Financial Process</a></li>
+<li class="expanded"><a href="/playbook/mApps/implementation#supportpage">Support Page</a><ul><li class="expanded last"><a href="/playbook/mApps/implementation#consumercontact">Consumer contact possibilities</a><ul><li class="leaf last"><a href="/playbook/mApps/implementation#examples">Examples</a></li>
+</ul></li>
+</ul></li>
+<li class="leaf"><a href="/playbook/mApps/implemenation#consumerContact">Consumer Contact Possiblities</a></li>
+<li class="leaf"><a href="/playbook/mApps/implementation#thirdparty">Third party integration</a></li>
+<li class="leaf"><a href="/playbook/mApps/implemenation#riskwatchouts">Risks and Watchouts</a></li>
+<li class="expanded"><a href="/playbook/mApps/implementation#googleanal">Google Analytics – Metrics/Reports</a><ul><li class="leaf last"><a href="/playbook/mApps/implementation#appstats">Application statistic reports</a></li>
+</ul></li>
+<li class="leaf"><a href="/playbook/mApps/implemenation#mAppsAnalSetInstr">mApps - Analytics Setup Instructions</a></li>
+<li class="leaf last"><a href="/playbook/mApps/implementation#archdesign">Architecture Design Review</a></li>
+</ul></li>
+<li class="expanded"><a href="/playbook/mApps/launchandleverage">LAUNCH &amp; LEVERAGE</a><ul><li class="expanded first"><a href="/playbook/mApps/launchandleverage#testing">Testing</a><ul><li class="leaf last"><a href="/playbook/mApps/launchandleverage#uat">User Acceptance Testing</a></li>
+</ul></li>
+<li class="expanded"><a href="/playbook/mApps/launchandleverage#service">Service Operations</a><ul><li class="expanded first"><a href="/playbook/mApps/launchandleverage#release">Release To Operations</a><ul><li class="leaf last"><a href="/playbook/mApps/launchandleverage#needr2o">Need R2O Checklist</a></li>
+</ul></li>
+<li class="leaf"><a href="/playbook/mApps/launchandleverage#change">Change Management</a></li>
+<li class="leaf"><a href="/playbook/mApps/launchandleverage#development">Development Escalation</a></li>
+<li class="expanded"><a href="/playbook/mApps/launchandleverage#operations">Operations Escalation</a><ul><li class="leaf first"><a href="/playbook/mApps/launchandleverage#iconmobile">Iconmobile Escalation Contacts</a></li>
+<li class="leaf last"><a href="/playbook/mApps/launchandleverage#mindtree">Mindtree Escalation Contacts</a></li>
+</ul></li>
+<li class="leaf"><a href="/playbook/mApps/launchandleverage#incident">Incident Management</a></li>
+<li class="leaf"><a href="/playbook/mApps/launchandleverage#vendors">Vendors—SLA</a></li>
+<li class="leaf last"><a href="/playbook/mApps/launchandleverage#supplier">Supplier Performance Mechanism</a></li>
+</ul></li>
+<li class="expanded"><a href="/playbook/mApps/launchandleverage#mobileapp">Mobile Application Support</a><ul><li class="expanded first"><a href="/playbook/mApps/launchandleverage#releaseto">Release To GCR</a><ul><li class="leaf last"><a href="/playbook/mApps/launchandleverage#gcr">GCR Needs mApp Details List</a></li>
+</ul></li>
+<li class="leaf last"><a href="/playbook/mApps/launchandleverage#ongoing">Ongoing Support</a></li>
+</ul></li>
+<li class="expanded"><a href="/playbook/mApps/launchandleverage#postlunch">Post-launch</a><ul><li class="leaf first"><a href="/playbook/mApps/launchandleverage#distribution">Distribution</a></li>
+<li class="expanded"><a href="/playbook/mApps/launchandleverage#deployment">Deployment</a><ul><li class="leaf last"><a href="/playbook/mApps/launchandleverage#checklist">Deployment Checklist Required</a></li>
+</ul></li>
+<li class="leaf"><a href="/playbook/mApps/launchandleverage#signing">Signing/ Publishing</a></li>
+<li class="leaf"><a href="/playbook/mApps/launchandleverage#signingsla">Signing/ Publishing Timing SLA</a></li>
+<li class="leaf last"><a href="/playbook/mApps/launchandleverage#signingoperation">Signing/ Publishing for Operations</a></li>
+</ul></li>
+<li class="leaf last"><a href="/playbook/mApps/launchandleverage#shuttingdown">Shutting Down a Mobile Application</a></li>
+</ul></li>
+<li class="expanded last"><a href="/playbook/mApps/additionalresource">ADDITIONAL RESOURCES</a><ul><li class="expanded first"><a href="/playbook/mApps/additionalresource#roles">Roles and Responsibilities</a><ul><li class="leaf first"><a href="/playbook/mApps/additionalresource#development">Development</a></li>
+<li class="leaf"><a href="/playbook/mApps/additionalresource#operations">Operations</a></li>
+<li class="leaf"><a href="/playbook/mApps/additionalresource#keymobile">Key Mobile Contacts</a></li>
+<li class="leaf last"><a href="/playbook/mApps/additionalresource#pgdigital">P&amp;G Digital Legal</a></li>
+</ul></li>
+<li class="expanded"><a href="/playbook/mApps/additionalresource#requirements">Requirements &amp; Best Practices</a><ul><li class="leaf first"><a href="/playbook/mApps/additionalresource#best">Best Practices And Accessibility</a></li>
+<li class="leaf"><a href="/playbook/mApps/additionalresource#iosandriod">iOS and Android Compliance Checklist</a></li>
+<li class="leaf"><a href="/playbook/mApps/additionalresource#principles">Principles And Guidelines</a></li>
+<li class="leaf last"><a href="/playbook/mApps/additionalresource#ftc">FTC Guidelines (USA)</a></li>
+</ul></li>
+<li class="expanded"><a href="/playbook/mApps/additionalresource#faq">Frequently Asked Questions</a><ul><li class="leaf first"><a href="/playbook/mApps/additionalresource#transitions">Transitions</a></li>
+<li class="leaf"><a href="/playbook/mApps/additionalresource#scans">Scans</a></li>
+<li class="leaf last"><a href="/playbook/mApps/additionalresource#other">Other</a></li>
+</ul></li>
+<li class="expanded"><a href="/playbook/mApps/additionalresource#predevelopment">Pre-development Guidance for Creative Agencies</a><ul><li class="leaf last"><a href="/playbook/mApps/additionalresource#appdesignreview">Application Design Review </a></li>
+</ul></li>
+<li class="leaf"><a href="/playbook/mApps/additionalresource#glossary">Glossary</a></li>
+<li class="leaf last"><a href="/playbook/mApps/additionalresource#revision">Revision History</a></li>
+</ul></li>
+</ul></div>
+</div>
+											 											 </li>
+											 </ul>
+											 
+											<div class="downloadp"></div>
+											<div class="menu_pbottom">
+												<div id="block-block-5" class="clear-block block block-block">
+
+
+  <div class="content"><ul>
+<li><a href="/help/contact-us" title="Contact" us>Contact us</a></li>
+<li><a href="/sitemap" title="Sitemap">Sitemap</a></li>
+</ul>
+</div>
+</div>
+											</div>
+										</div>
+										
+								</td>
+								<td  class="sh" valign="top"><img src="http://stage.processpedia.cs.pg.com/sites/all/themes/processpedia/images/shadow.png"/></td>
+								<td class="pright_content" valign="top">
+									
+										<div class="pright_content_txt">
+											<div class="content1">
+												<div id="tabs-wrapper" class="clear-block">         
+												<h4>Preview</h4>  
+												<div class="ppbody" id="preview">
+												<?php 
+												if(isset($this->content)):
+													echo stripslashes($this->content);
+												else:?>
+												<script>
+												$(document).ready(function(){														
+													var content = window.opener.$("#elm1").html();	
+													
+													//alert("ssss");
+													//alert(content);
+													
+													
+													$("#preview").html(content);
+												});
+												<?php endif; ?>
+												</script>
+												</div>
+											</div>
+										</div>		
+									
+									</td>
+								</tr>
+							</table>
+							
+						</div>
+					
+					</div>
+					<!--Banner img Ends-->
+<div id="footer">
+
+<div class="footter">
+						<div class="fot_menu1">
+							<h3>Digital Business</h3>
+							<div class="fot_menu_cont1">
+								<h5>PLAYBOOKS</h5>
+								<ul class="flist1">
+									<li>Digital Presence
+										<ul>
+											<li><a href="http://stage.processpedia.cs.pg.com/playbook/cms"title="CMS">CMS</a></li>
+										</ul>
+										<ul>
+											<li><a href="http://stage.processpedia.cs.pg.com/playbook/mApps" alt="Mobile Appsb" title="Mobile Apps">Mobile Apps</a></li>
+										</ul>
+										<ul>
+											<li><a href="http://stage.processpedia.cs.pg.com/playbook/mobileweb" alt="Mobile Web" title="Mobile Web">Mobile Web</a></li>
+										</ul>
+											<ul>
+											<li><a href="http://stage.processpedia.cs.pg.com/playbook/webots"  alt="Web OTS Dev" title="Web OTS Dev">Web OTS Dev</a></li>
+										</ul>
+									</li>
+									
+								</ul>
+								<ul class="flist2">
+									<li>Social
+										<ul>
+											<li><a href="http://stage.processpedia.cs.pg.com/playbook/social" title="Social" >Social</a></li>
+											
+										</ul>
+									</li>
+									<li>eCommerce
+										
+										<ul>
+											<li><a href="/underconstruction"  alt="eCollections" title="eCollections">eCollections</a></li>
+										</ul>
+										<ul>
+											<li><a href="/underconstruction"  alt="eContent" title="eContent">eContent</a></li>
+										</ul>
+										
+										<ul>
+											<li><a href="/underconstruction"  alt="eStore" title="eStore">eStore</a></li>
+										</ul>
+									</li>
+									
+								</ul>
+								<ul class="flist2">
+									<li>
+										<ul class="first2_topal">
+											<li><h5>PROCESS GUIDES</h5></li>
+											
+											<li><a href="/underconstruction" alt="BIN/R&R" title="BIN/R&R">BIN/R&R</a></li>
+											<li><a href="http://stage.processpedia.cs.pg.com/processguide/CDN" title="CDN" alt="CDN">CDN</a></li>
+											<li><a href="/underconstruction" alt="eCounseling" title="eCounseling">eCounseling</a></li>
+											<li><a href="http://stage.processpedia.cs.pg.com/processguide/HTML5" title="HTML5 for Mobile" alt="HTML5 for Mobile">HTML5 for Mobile</a></li>
+											<li><a href="http://stage.processpedia.cs.pg.com/processguide/responsivewebdesign" title="Responsive Web Design" alt="Responsive Web Design">Responsive Web Design</a></li>
+											
+																						
+											
+										</ul>
+									</li>
+									
+								</ul>
+							
+							<div class="clr"></div>	
+							</div>
+							
+						</div>
+						<div class="fot_menu2">
+							<h3>Consumer Data</h3>
+							<div class="fot_menu_cont2">
+								<h5>PLAYBOOKS</h5>
+								<ul class="flist1">
+										<li> 1,CP
+										<ul>
+											<li><a href="/underconstruction" alt="Consumer Central" title="Consumer Central">Consumer Central</a></li>
+
+											<li><a href="/underconstruction" alt="eMail Messaging" title="eMail Messaging">eMail Messaging</a></li>
+											<li><a href="/underconstruction"  alt="Mobile Messaging" title="Mobile Messaging">Mobile Messaging</a></li>
+											<li><a href="http://stage.processpedia.cs.pg.com/playbook/profileregistration"  alt="Registration" title="Registration">Registration</a></li>
+																						<li><a href="underconstruction"  alt="Relationship Builder" title="Relationship Builder">Relationship Builder</a></li>
+											
+										</ul>
+									</li>
+									<li>Loyalty
+										<ul>
+											<li><a href="/underconstruction"  alt="Loyalty Connect" title="Loyalty Connect">Loyalty Connect</a></li>
+										</ul>
+									</li>
+									
+								</ul>
+								<ul class="flist2">
+									<li>Consumer Comments
+										<ul>
+											<li><a href="/underconstruction"  alt="Argus" title="Argus" >Argus</a></li>
+											<li><a href="/underconstruction"  alt="C3DB" title="C3DB" >C3DB</a></li>
+											
+											<li><a href="/underconstruction"  alt="Contact Us" title="Contact Us" >Contact Us</a></li>
+											<li><a href="/underconstruction"  alt="FAQ" title="FAQ" >FAQ</a></li>
+											<li><a href="/underconstruction"  alt="Salesforce" title="Salesforce" >Salesforce</a></li> 	
+											
+										</ul>
+									</li>
+									<li>Counters
+										<ul>
+											<li><a href="http://stage.processpedia.cs.pg.com/playbook/c2" alt="C2" title="C2" >C2</a></li>
+										</ul>
+									</li>
+									
+									
+								</ul>
+								<ul class="flist2">
+									<li>
+										<ul class="first2_topal">
+											<li><h5>PROCESS GUIDES</h5></li>
+											<li><a href="http://stage.processpedia.cs.pg.com/processguide/web-accessibility"  alt="Web Accessibility" title="Web Accessibility" >Web Accessibility</a></li>
+											<li><a href="http://stage.processpedia.cs.pg.com/processguide/web-analytics"  alt="Web Analytics" title="Web Analytics" >Web Analytics</a></li>
+											
+										</ul>
+									</li>
+									
+								</ul>
+                                                                                                                
+                                                                                                                <div class="clr"></div>  
+                                          </div>
+     </div>
+     <div class="clr"></div>
+    <div class="footter_s">
+		 <div class="copyr">P&G Processpedia 2012 * English (US)</div>
+			<div class="footter_s_menu">
+			<ul>
+					<li><a href="/help/about-processpedia" title="About Playbooks and Process Guides">About Playbooks and Process Guides</a></li>
+					<li><a href="http://privacy.pg.com/privacy/index.shtml" title="Privacy Policy">Privacy Policy</a></li>
+					<li><a href="/help/contact-us" title="Contact Us">Contact Us</a></li>
+			</ul>
+			</div>
+		<div class="gbs_logo"><img src="http://stage.processpedia.cs.pg.com/sites/all/themes/processpedia/images/gbs_logo.png" alt="GBSlogo" title="GBS" /></div>
+	</div>
+
+	</div>
+</div>
+<!--<script type="text/javascript" src="/sites/all/modules/wysiwyg/wysiwyg.js?5"></script>
+<script src="//s.btstatic.com/tag.js">{ site: "fCCqFsG" }</script>
+<noscript><iframe src="//s.thebrighttag.com/iframe?c=fCCqFsG" width="1" height="1" frameborder="0" scrolling="no" marginheight="0" marginwidth="0"></iframe></noscript>-->
+</body>
+</html>

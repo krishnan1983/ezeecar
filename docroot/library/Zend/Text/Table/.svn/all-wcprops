@@ -1,0 +1,23 @@
+K 25
+svn:wc:ra_dav:version-url
+V 67
+/PnG/!svn/ver/80332/ppEditor/trunk/ppeditor/library/Zend/Text/Table
+END
+Column.php
+K 25
+svn:wc:ra_dav:version-url
+V 78
+/PnG/!svn/ver/80332/ppEditor/trunk/ppeditor/library/Zend/Text/Table/Column.php
+END
+Exception.php
+K 25
+svn:wc:ra_dav:version-url
+V 81
+/PnG/!svn/ver/80332/ppEditor/trunk/ppeditor/library/Zend/Text/Table/Exception.php
+END
+Row.php
+K 25
+svn:wc:ra_dav:version-url
+V 75
+/PnG/!svn/ver/80332/ppEditor/trunk/ppeditor/library/Zend/Text/Table/Row.php
+END

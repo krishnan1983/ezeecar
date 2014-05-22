@@ -1,0 +1,41 @@
+K 25
+svn:wc:ra_dav:version-url
+V 70
+/PnG/!svn/ver/80332/ppEditor/trunk/ppeditor/library/Zend/XmlRpc/Client
+END
+IntrospectException.php
+K 25
+svn:wc:ra_dav:version-url
+V 94
+/PnG/!svn/ver/80332/ppEditor/trunk/ppeditor/library/Zend/XmlRpc/Client/IntrospectException.php
+END
+FaultException.php
+K 25
+svn:wc:ra_dav:version-url
+V 89
+/PnG/!svn/ver/80332/ppEditor/trunk/ppeditor/library/Zend/XmlRpc/Client/FaultException.php
+END
+Exception.php
+K 25
+svn:wc:ra_dav:version-url
+V 84
+/PnG/!svn/ver/80332/ppEditor/trunk/ppeditor/library/Zend/XmlRpc/Client/Exception.php
+END
+HttpException.php
+K 25
+svn:wc:ra_dav:version-url
+V 88
+/PnG/!svn/ver/80332/ppEditor/trunk/ppeditor/library/Zend/XmlRpc/Client/HttpException.php
+END
+ServerIntrospection.php
+K 25
+svn:wc:ra_dav:version-url
+V 94
+/PnG/!svn/ver/80332/ppEditor/trunk/ppeditor/library/Zend/XmlRpc/Client/ServerIntrospection.php
+END
+ServerProxy.php
+K 25
+svn:wc:ra_dav:version-url
+V 86
+/PnG/!svn/ver/80332/ppEditor/trunk/ppeditor/library/Zend/XmlRpc/Client/ServerProxy.php
+END

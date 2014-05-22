@@ -1,0 +1,59 @@
+K 25
+svn:wc:ra_dav:version-url
+V 68
+/PnG/!svn/ver/80959/ppEditor/trunk/ppeditor/application/views/emails
+END
+authorToAdmin.phtml
+K 25
+svn:wc:ra_dav:version-url
+V 88
+/PnG/!svn/ver/80817/ppEditor/trunk/ppeditor/application/views/emails/authorToAdmin.phtml
+END
+editRequest.phtml
+K 25
+svn:wc:ra_dav:version-url
+V 86
+/PnG/!svn/ver/80955/ppEditor/trunk/ppeditor/application/views/emails/editRequest.phtml
+END
+adminToAuthor.phtml
+K 25
+svn:wc:ra_dav:version-url
+V 88
+/PnG/!svn/ver/80959/ppEditor/trunk/ppeditor/application/views/emails/adminToAuthor.phtml
+END
+review.phtml
+K 25
+svn:wc:ra_dav:version-url
+V 81
+/PnG/!svn/ver/80817/ppEditor/trunk/ppeditor/application/views/emails/review.phtml
+END
+sendToTA.phtml
+K 25
+svn:wc:ra_dav:version-url
+V 83
+/PnG/!svn/ver/80827/ppEditor/trunk/ppeditor/application/views/emails/sendToTA.phtml
+END
+delete.phtml
+K 25
+svn:wc:ra_dav:version-url
+V 81
+/PnG/!svn/ver/80826/ppEditor/trunk/ppeditor/application/views/emails/delete.phtml
+END
+emailRequestDetails.phtml
+K 25
+svn:wc:ra_dav:version-url
+V 94
+/PnG/!svn/ver/80959/ppEditor/trunk/ppeditor/application/views/emails/emailRequestDetails.phtml
+END
+closed.phtml
+K 25
+svn:wc:ra_dav:version-url
+V 81
+/PnG/!svn/ver/80959/ppEditor/trunk/ppeditor/application/views/emails/closed.phtml
+END
+authorToTA.phtml
+K 25
+svn:wc:ra_dav:version-url
+V 85
+/PnG/!svn/ver/80826/ppEditor/trunk/ppeditor/application/views/emails/authorToTA.phtml
+END

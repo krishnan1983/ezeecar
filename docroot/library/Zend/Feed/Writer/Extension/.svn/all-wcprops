@@ -1,0 +1,17 @@
+K 25
+svn:wc:ra_dav:version-url
+V 78
+/PnG/!svn/ver/80332/ppEditor/trunk/ppeditor/library/Zend/Feed/Writer/Extension
+END
+RendererAbstract.php
+K 25
+svn:wc:ra_dav:version-url
+V 99
+/PnG/!svn/ver/80332/ppEditor/trunk/ppeditor/library/Zend/Feed/Writer/Extension/RendererAbstract.php
+END
+RendererInterface.php
+K 25
+svn:wc:ra_dav:version-url
+V 100
+/PnG/!svn/ver/80332/ppEditor/trunk/ppeditor/library/Zend/Feed/Writer/Extension/RendererInterface.php
+END

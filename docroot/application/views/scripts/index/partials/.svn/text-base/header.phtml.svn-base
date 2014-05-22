@@ -1,0 +1,30 @@
+<div id="header" class="register-banner">
+    	<h1 class="logo fleft"><img src="<?php echo $this->img_path.$this->language; ?>/gillette-future-champs-logo.png" width="232" height="95"  title="<?php echo $this->config[$this->language]['phrases'][0]; ?>" alt="<?php echo $this->config[$this->language]['phrases'][0]; ?>" /></h1>
+    	<?php if ($this->app_like_status) : ?>
+		<div class="head-rgt">
+			<img src="<?php echo $this->img_path.$this->language; ?>/are-you-furture-champs.png" width="260" height="68"  title="ARE YOU FURTURE CHAMPS?" alt="ARE YOU FURTURE CHAMPS?" class="fleft" />
+			<div class="fright">
+			<?php if($this->checkAlreadyRegistered === false && $this->showRegisterButton === true): ?>                    
+				<a class="fb_auth" href="<?php echo $this->registerUrl(); ?>">
+					<img src="<?php echo $this->img_path.$this->language; ?>/register.png"  alt="" />
+				</a> 		
+				
+			<?php endif; ?>			
+			</div>
+		</div>
+		<!-- Menu -->
+		<div class="menu">
+			<ul>
+				<li class="first"><a id="home" href="<?php echo $this->baseUrl('home/index/lang/' . $this->language); ?>" title="<?php echo $this->config[$this->language]['phrases'][21]; ?>"><span><?php echo $this->config[$this->language]['phrases'][21]; ?></span></a></li>
+				<li><a id="tournament" href="<?php echo $this->baseUrl('tournament/index/lang/' . $this->language); ?>" title="<?php echo $this->config[$this->language]['phrases'][22]; ?>"><span><?php echo $this->config[$this->language]['phrases'][22]; ?></span></a></li>
+				<li><a id="prize" href="<?php echo $this->baseUrl('index/prize/lang/' . $this->language); ?>"  title="<?php echo $this->config[$this->language]['phrases'][55]; ?>"><span><?php echo $this->config[$this->language]['phrases'][55]; ?></span></a></li>
+				<li><a id="champ" href="<?php echo $this->baseUrl('champ/index/lang/' . $this->language); ?>" title="<?php echo $this->config[$this->language]['phrases'][23]; ?>"><span><?php echo $this->config[$this->language]['phrases'][23]; ?></span></a></li>
+				<li class="last"><a id="ground_news" href="<?php echo $this->baseUrl('news/index/lang/' . $this->language); ?>"title="<?php echo $this->config[$this->language]['phrases'][25]; ?>"><span><?php echo $this->config[$this->language]['phrases'][24]; ?></span></a></li>
+			</ul>
+		</div>	
+		<?php else: ?>
+		<div class="register fright">
+            <?php echo $this->config[$this->language]['phrases'][61]; ?>
+        </div>
+		<?php endif; ?>
+</div>

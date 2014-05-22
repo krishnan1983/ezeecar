@@ -1,0 +1,17 @@
+K 25
+svn:wc:ra_dav:version-url
+V 70
+/PnG/!svn/ver/80332/ppEditor/trunk/ppeditor/library/Zend/Queue/Message
+END
+Iterator.php
+K 25
+svn:wc:ra_dav:version-url
+V 83
+/PnG/!svn/ver/80332/ppEditor/trunk/ppeditor/library/Zend/Queue/Message/Iterator.php
+END
+PlatformJob.php
+K 25
+svn:wc:ra_dav:version-url
+V 86
+/PnG/!svn/ver/80332/ppEditor/trunk/ppeditor/library/Zend/Queue/Message/PlatformJob.php
+END

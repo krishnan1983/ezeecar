@@ -1,0 +1,23 @@
+K 25
+svn:wc:ra_dav:version-url
+V 73
+/PnG/!svn/ver/80332/ppEditor/trunk/ppeditor/library/Zend/XmlRpc/Generator
+END
+GeneratorAbstract.php
+K 25
+svn:wc:ra_dav:version-url
+V 95
+/PnG/!svn/ver/80332/ppEditor/trunk/ppeditor/library/Zend/XmlRpc/Generator/GeneratorAbstract.php
+END
+XmlWriter.php
+K 25
+svn:wc:ra_dav:version-url
+V 87
+/PnG/!svn/ver/80332/ppEditor/trunk/ppeditor/library/Zend/XmlRpc/Generator/XmlWriter.php
+END
+DomDocument.php
+K 25
+svn:wc:ra_dav:version-url
+V 89
+/PnG/!svn/ver/80332/ppEditor/trunk/ppeditor/library/Zend/XmlRpc/Generator/DomDocument.php
+END

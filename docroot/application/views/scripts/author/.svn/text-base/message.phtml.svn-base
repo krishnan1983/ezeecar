@@ -1,0 +1,40 @@
+<div id="mid-cont">
+		<h3 class="fleft">REQUESTS</h3>
+		<span class="button fright"><a href="/author/requests/search/<?php echo $this->search; ?>" title="Back"><span class="back">Back to Request Listing</span></a></span>
+		<div class="column1 pad-adj fleft">		
+			<table cellpadding="0" cellspacing="0" class="table-style">			
+				<tr class="dgrey">
+					<td width="15%">Request Name:</td>
+					<td width="85%"><?php echo $this->data['Name']?></td>
+				</tr>				
+				<?php foreach($this->data['message'] as $message):?>
+				<tr class="lgrey brd-bottom">
+					<td colspan = "2">
+						<table cellpadding="0" cellspacing="0" width="100%" border=1>
+							<tr>
+								<td width="15%"><strong>Message By</strong>:</td>
+								<td>
+									<?php 
+									echo $message['name'];?> 								
+									<?php echo $message['dt'];?>
+								</td>
+							</tr>
+
+							<tr>
+								<td>&nbsp;</td>
+								<!-- <td align="right">Message:</td>-->
+								<td>Message: <?php echo stripslashes($message['Message']);?></td>
+							</tr>
+						</table>
+					</td>
+				</tr>	
+				<?php endforeach; ?>
+				<tr>
+					<td colspan = "2">
+						<?php echo $this->form; ?>		
+					</td>
+				</tr>
+			</table>
+		</div>
+	</div>
+	<script> PP.message.init()</script>

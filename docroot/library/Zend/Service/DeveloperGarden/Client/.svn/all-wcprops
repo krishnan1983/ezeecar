@@ -1,0 +1,23 @@
+K 25
+svn:wc:ra_dav:version-url
+V 87
+/PnG/!svn/ver/80332/ppEditor/trunk/ppeditor/library/Zend/Service/DeveloperGarden/Client
+END
+Exception.php
+K 25
+svn:wc:ra_dav:version-url
+V 101
+/PnG/!svn/ver/80332/ppEditor/trunk/ppeditor/library/Zend/Service/DeveloperGarden/Client/Exception.php
+END
+ClientAbstract.php
+K 25
+svn:wc:ra_dav:version-url
+V 106
+/PnG/!svn/ver/80332/ppEditor/trunk/ppeditor/library/Zend/Service/DeveloperGarden/Client/ClientAbstract.php
+END
+Soap.php
+K 25
+svn:wc:ra_dav:version-url
+V 96
+/PnG/!svn/ver/80332/ppEditor/trunk/ppeditor/library/Zend/Service/DeveloperGarden/Client/Soap.php
+END

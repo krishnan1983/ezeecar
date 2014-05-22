@@ -1,0 +1,55 @@
+
+.ppeheading_blue {
+text-indent: 0pt;
+font-family: 'Arial','Arial';
+font-size: 16pt;
+font-weight: normal;
+color: #003DAF;
+margin: 0;
+padding: 0;
+}
+
+.ppeheading_bckgrnd {
+text-indent: 0pt;
+font-family: 'Arial','Arial';
+font-size: 14pt;
+font-weight: normal;
+background-color: #BEF0EF;
+width:20%;
+}
+
+.ppeheading_bckgrnd_yellow {
+font-family: 'Arial';
+font-size: 14pt;
+background-color: #FFFF00;
+}
+
+table.ppe_tdldesign ,.ppe_tdldesign td
+{
+border:1px solid black;
+}
+
+.nostyle
+{
+list-style:none;
+padding: 5px;
+}
+
+.ppe_bottom_bullet_hide li
+{
+margin-left:10px;
+}
+
+.ppe_bottom_bullet li
+{
+margin-left:10px;
+}
+
+.ppe_textUnderline
+{
+text-decoration: underline;
+}
+
+.ppe_emphasis{
+padding:0;font-style: italic;font-weight:700;
+}

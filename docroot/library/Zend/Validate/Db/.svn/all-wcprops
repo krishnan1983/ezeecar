@@ -1,0 +1,23 @@
+K 25
+svn:wc:ra_dav:version-url
+V 68
+/PnG/!svn/ver/80332/ppEditor/trunk/ppeditor/library/Zend/Validate/Db
+END
+NoRecordExists.php
+K 25
+svn:wc:ra_dav:version-url
+V 87
+/PnG/!svn/ver/80332/ppEditor/trunk/ppeditor/library/Zend/Validate/Db/NoRecordExists.php
+END
+RecordExists.php
+K 25
+svn:wc:ra_dav:version-url
+V 85
+/PnG/!svn/ver/80332/ppEditor/trunk/ppeditor/library/Zend/Validate/Db/RecordExists.php
+END
+Abstract.php
+K 25
+svn:wc:ra_dav:version-url
+V 81
+/PnG/!svn/ver/80332/ppEditor/trunk/ppeditor/library/Zend/Validate/Db/Abstract.php
+END

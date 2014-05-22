@@ -1,0 +1,23 @@
+K 25
+svn:wc:ra_dav:version-url
+V 85
+/PnG/!svn/ver/80332/ppEditor/trunk/ppeditor/library/Zend/Ldap/Node/Schema/ObjectClass
+END
+ActiveDirectory.php
+K 25
+svn:wc:ra_dav:version-url
+V 105
+/PnG/!svn/ver/80332/ppEditor/trunk/ppeditor/library/Zend/Ldap/Node/Schema/ObjectClass/ActiveDirectory.php
+END
+Interface.php
+K 25
+svn:wc:ra_dav:version-url
+V 99
+/PnG/!svn/ver/80332/ppEditor/trunk/ppeditor/library/Zend/Ldap/Node/Schema/ObjectClass/Interface.php
+END
+OpenLdap.php
+K 25
+svn:wc:ra_dav:version-url
+V 98
+/PnG/!svn/ver/80332/ppEditor/trunk/ppeditor/library/Zend/Ldap/Node/Schema/ObjectClass/OpenLdap.php
+END

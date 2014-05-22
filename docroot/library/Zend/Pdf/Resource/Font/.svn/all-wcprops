@@ -1,0 +1,35 @@
+K 25
+svn:wc:ra_dav:version-url
+V 74
+/PnG/!svn/ver/80332/ppEditor/trunk/ppeditor/library/Zend/Pdf/Resource/Font
+END
+Simple.php
+K 25
+svn:wc:ra_dav:version-url
+V 85
+/PnG/!svn/ver/80332/ppEditor/trunk/ppeditor/library/Zend/Pdf/Resource/Font/Simple.php
+END
+Type0.php
+K 25
+svn:wc:ra_dav:version-url
+V 84
+/PnG/!svn/ver/80332/ppEditor/trunk/ppeditor/library/Zend/Pdf/Resource/Font/Type0.php
+END
+Extracted.php
+K 25
+svn:wc:ra_dav:version-url
+V 88
+/PnG/!svn/ver/80332/ppEditor/trunk/ppeditor/library/Zend/Pdf/Resource/Font/Extracted.php
+END
+FontDescriptor.php
+K 25
+svn:wc:ra_dav:version-url
+V 93
+/PnG/!svn/ver/80332/ppEditor/trunk/ppeditor/library/Zend/Pdf/Resource/Font/FontDescriptor.php
+END
+CidFont.php
+K 25
+svn:wc:ra_dav:version-url
+V 86
+/PnG/!svn/ver/80332/ppEditor/trunk/ppeditor/library/Zend/Pdf/Resource/Font/CidFont.php
+END

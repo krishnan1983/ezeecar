@@ -1,0 +1,12 @@
+<div id="mid-cont">
+		<div class="column1 pad-adj fleft">
+		<table cellpadding="0" cellspacing="0" class="table-style">		
+			<tr class="dgrey">
+				<td colspan="2">Create Document</td>
+			</tr>
+			<?php echo $this->form; ?>
+			</table>
+		</div>
+</div>
+
+<script> PP.document.init()</script>

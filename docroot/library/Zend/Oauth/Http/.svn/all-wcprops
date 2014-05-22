@@ -1,0 +1,29 @@
+K 25
+svn:wc:ra_dav:version-url
+V 67
+/PnG/!svn/ver/80332/ppEditor/trunk/ppeditor/library/Zend/Oauth/Http
+END
+RequestToken.php
+K 25
+svn:wc:ra_dav:version-url
+V 84
+/PnG/!svn/ver/80332/ppEditor/trunk/ppeditor/library/Zend/Oauth/Http/RequestToken.php
+END
+UserAuthorization.php
+K 25
+svn:wc:ra_dav:version-url
+V 89
+/PnG/!svn/ver/80332/ppEditor/trunk/ppeditor/library/Zend/Oauth/Http/UserAuthorization.php
+END
+AccessToken.php
+K 25
+svn:wc:ra_dav:version-url
+V 83
+/PnG/!svn/ver/80332/ppEditor/trunk/ppeditor/library/Zend/Oauth/Http/AccessToken.php
+END
+Utility.php
+K 25
+svn:wc:ra_dav:version-url
+V 79
+/PnG/!svn/ver/80332/ppEditor/trunk/ppeditor/library/Zend/Oauth/Http/Utility.php
+END

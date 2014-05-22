@@ -1,0 +1,35 @@
+K 25
+svn:wc:ra_dav:version-url
+V 63
+/PnG/!svn/ver/80332/ppEditor/trunk/ppeditor/library/Zend/Memory
+END
+Manager.php
+K 25
+svn:wc:ra_dav:version-url
+V 75
+/PnG/!svn/ver/80332/ppEditor/trunk/ppeditor/library/Zend/Memory/Manager.php
+END
+Value.php
+K 25
+svn:wc:ra_dav:version-url
+V 73
+/PnG/!svn/ver/80332/ppEditor/trunk/ppeditor/library/Zend/Memory/Value.php
+END
+Exception.php
+K 25
+svn:wc:ra_dav:version-url
+V 77
+/PnG/!svn/ver/80332/ppEditor/trunk/ppeditor/library/Zend/Memory/Exception.php
+END
+Container.php
+K 25
+svn:wc:ra_dav:version-url
+V 77
+/PnG/!svn/ver/80332/ppEditor/trunk/ppeditor/library/Zend/Memory/Container.php
+END
+AccessController.php
+K 25
+svn:wc:ra_dav:version-url
+V 84
+/PnG/!svn/ver/80332/ppEditor/trunk/ppeditor/library/Zend/Memory/AccessController.php
+END

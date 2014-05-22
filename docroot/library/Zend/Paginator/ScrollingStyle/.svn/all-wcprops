@@ -1,0 +1,35 @@
+K 25
+svn:wc:ra_dav:version-url
+V 81
+/PnG/!svn/ver/80332/ppEditor/trunk/ppeditor/library/Zend/Paginator/ScrollingStyle
+END
+Jumping.php
+K 25
+svn:wc:ra_dav:version-url
+V 93
+/PnG/!svn/ver/80332/ppEditor/trunk/ppeditor/library/Zend/Paginator/ScrollingStyle/Jumping.php
+END
+Sliding.php
+K 25
+svn:wc:ra_dav:version-url
+V 93
+/PnG/!svn/ver/80332/ppEditor/trunk/ppeditor/library/Zend/Paginator/ScrollingStyle/Sliding.php
+END
+Interface.php
+K 25
+svn:wc:ra_dav:version-url
+V 95
+/PnG/!svn/ver/80332/ppEditor/trunk/ppeditor/library/Zend/Paginator/ScrollingStyle/Interface.php
+END
+Elastic.php
+K 25
+svn:wc:ra_dav:version-url
+V 93
+/PnG/!svn/ver/80332/ppEditor/trunk/ppeditor/library/Zend/Paginator/ScrollingStyle/Elastic.php
+END
+All.php
+K 25
+svn:wc:ra_dav:version-url
+V 89
+/PnG/!svn/ver/80332/ppEditor/trunk/ppeditor/library/Zend/Paginator/ScrollingStyle/All.php
+END

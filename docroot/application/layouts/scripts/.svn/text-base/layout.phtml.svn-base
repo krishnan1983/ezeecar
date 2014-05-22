@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset=utf-8 />
+<?php echo $this->headTitle() ?>
+<link rel="stylesheet" type="text/css" href="<?php echo $this->baseUrl('/public/css/global.css');?>" />
+<link rel="stylesheet" type="text/css" href="<?php echo $this->baseUrl('/public/css/ppeditor.css');?>" />
+<script type="text/javascript" src="<?php echo $this->baseUrl('/public/js/jquery-1.10.2.min.js');?>"></script>
+<script type="text/javascript" src="<?php echo $this->baseUrl('/public/js/ppeditor.js');?>"></script>
+
+</head>
+<body>
+ <div id="mainCont">
+	<div id="header">
+		<h1 class="fleft"><img src="<?php echo $this->baseUrl("/public/images/whitejazz_logo.jpg");?>" alt="Processpedia" title="Processpedia" /></h1>
+		<div class="user fright"><?php 
+		$auth = Zend_Auth::getInstance();
+		$username = $auth->getStorage()->read()->name;
+		$userRole = $auth->getStorage()->read()->user_role;		
+		
+			$patterns = array();
+			$patterns[0] = '/_pg/';
+			$patterns[1] = '/_1/';
+			$replacements = array();
+			$replacements[0] = '';
+			
+			$uname = preg_replace($patterns, $replacements, $username);
+
+
+		
+		echo 'Welcome ' . $uname . '. <a href="/index/logout">Logout</a>'
+		
+		?></div>
+		<div class="menu">
+			<ul>
+				<?php  if($userRole == 'author'):?>
+				<li><a href="/author/requests/"  title="REQUESTS" id="requesttab">REQUESTS</a></li>
+				<li><a href="/author/documents/" title="DOCUMENTS" id="documenttab">DOCUMENTS</a></li>
+				<?php else:?>
+				<li><a href="/admin/requests/" class="active" title="REQUESTS" id="requesttab">REQUESTS</a></li>
+				<li><a href="/admin/templates/" title="TEMPLATES" id="templatetab">TEMPLATES</a></li>
+				<li><a href="/admin/configuration/" title="CONFIGURATION" id="configurationtab">CONFIGURATIONS</a></li>				
+				<?php  endif; ?>
+			</ul>
+		</div>
+	</div>
+
+	<?php if(isset($this->errmessages) && count($this->errmessages)>0):
+		foreach($this->errmessages as $error):
+		echo "<div class='message success'>".$error."</div>";
+		endforeach;
+	endif;?>
+	
+	<?php echo $this->layout()->content ?>  
+	        
+	<script type="text/javascript">	
+	<?php if (isset($this->current_page)) { ?>
+		$(function() {
+			
+			$('#requesttab,#documenttab').addClass('active');
+			$('#<?php echo $this->current_page?>').removeClass('active');
+			
+		})
+	<?php } ?>
+	<?php if (isset($this->admin_current_page)) { ?>
+	$(function() {
+		
+		$('#requesttab,#templatetab, #configurationtab').addClass('active');
+		$('#<?php echo $this->admin_current_page?>').removeClass('active');
+		
+	})
+	<?php } ?>
+
+	</script>
+
+	 </div>
+	<div id="footer">
+		<div class="foot-cont">
+			<div class="copyright fleft">&copy; 2014 Procter&Gamble. All rights reserved.</div>
+			<span class="fright"><img src="<?php echo $this->baseUrl('/public/images/gbs_logo.png');?>" alt="GBS" title="GBS" /></span>
+		</div>
+	 <div>
+</body>
+</html>
+

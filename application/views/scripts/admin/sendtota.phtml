@@ -1,0 +1,45 @@
+
+	<div id="mid-cont">
+		<h3 class="fleft">SEND REQUEST TO TECHNICAL AGENCY</h3>
+		<span class="button fright"><a href="/admin/requests/search/<?php echo $this->search;?>" title="Back to Request Listing"><span class="back">Back to Request Listing</span></a></span>
+		<div class="column1 pad-adj fleft">		
+		<form name="editRequest" id="editRequest" action="/admin/sendtota" method="post" />
+		<input type="hidden" name="RequestId" value="<?php if(isset($this->rs['RequestId'])) echo $this->rs['RequestId']; ?>" />
+		<input type="hidden" name="doctype" value="<?php if(isset($this->rs['Type'])) echo $this->rs['Type']; ?>" />
+		<input type="hidden" name="Status" value="3" />
+		
+			<table cellpadding="0" cellspacing="0" class="table-style" summary="Send To TA">
+			<caption style="display:none">Send To TA</caption>			
+				<tr class="dgrey">
+					<td width="15%">Request Name:</td>
+					<td width="85%" style="font-weight:bold;color:#F5F6CE"><?php echo $this->rs['Name'];?></td>
+				</tr>
+				
+				<tr>
+					<td>Page Type:</td>
+					<td><?php if(isset($this->rs['Type'])) echo Pp_Type::getDescriptionById('pg');	?></td>
+				</tr>
+				<tr>
+					<td>Request Url:</td>
+					<td><?php echo Pp_Common_UrlHelper::getAdminRequestURL($this->rs['RequestId']); ?></td>
+				</tr>
+				
+				
+				<tr>
+					<td><label class = "required"> Message:</label></td>
+					<td><Textarea   class="w3" name="message" id="message" /></textarea></td>
+				</tr>
+				
+				<tr>
+					<td>&nbsp;</td>
+					<td><span class="fleft"><input type="submit" value="Send Request" class="sm-btn" id="submit" /> </span>
+						
+					</td>
+				</tr>
+			</table>
+		</div>
+	</div>
+	<script>
+PP.sendtota.init();
+
+</script>

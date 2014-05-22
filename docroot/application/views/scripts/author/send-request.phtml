@@ -1,0 +1,27 @@
+<div id="mid-cont">
+		<h3 class="fleft">REQUESTS</h3>
+		<!-- <span class="button fright"><a href="/author/requests" title="Back"><span class="back">Back to Request Listing</span></a></span>-->
+		<div class="column1 pad-adj fleft">		
+			<table cellpadding="0" cellspacing="0" class="table-style">			
+				<tr class="dgrey">
+					<td width="15%">Request Name:</td>
+					<td width="85%"><?php echo "Upload ". $this->data['Name']?></td>
+				</tr>				
+				<tr>
+					<td>Page Type:</td>
+					<td><?php echo Pp_Type::getDescriptionById($this->data['Type'])?></td>
+				</tr>
+				<tr>
+					<td>Request URL:</td>
+					<td><a href="<?php echo Pp_Common_UrlHelper::getPreviewURL($this->data['DocumentId']); ?>" target = "_blank"><?php echo Pp_Common_UrlHelper::getPreviewURL($this->data['DocumentId']); ?></a>
+					</td>
+				</tr>
+				<tr>
+					<td colspan = "2">
+						<?php echo $this->form; ?>	
+					</td>
+				</tr>	
+			</table>
+		</div>
+	</div>
+	<script> PP.sendRequest.init(); </script>

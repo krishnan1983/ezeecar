@@ -1,0 +1,35 @@
+K 25
+svn:wc:ra_dav:version-url
+V 61
+/PnG/!svn/ver/80332/ppEditor/trunk/ppeditor/library/Zend/Json
+END
+Exception.php
+K 25
+svn:wc:ra_dav:version-url
+V 75
+/PnG/!svn/ver/80332/ppEditor/trunk/ppeditor/library/Zend/Json/Exception.php
+END
+Expr.php
+K 25
+svn:wc:ra_dav:version-url
+V 70
+/PnG/!svn/ver/80332/ppEditor/trunk/ppeditor/library/Zend/Json/Expr.php
+END
+Encoder.php
+K 25
+svn:wc:ra_dav:version-url
+V 73
+/PnG/!svn/ver/80332/ppEditor/trunk/ppeditor/library/Zend/Json/Encoder.php
+END
+Decoder.php
+K 25
+svn:wc:ra_dav:version-url
+V 73
+/PnG/!svn/ver/80332/ppEditor/trunk/ppeditor/library/Zend/Json/Decoder.php
+END
+Server.php
+K 25
+svn:wc:ra_dav:version-url
+V 72
+/PnG/!svn/ver/80332/ppEditor/trunk/ppeditor/library/Zend/Json/Server.php
+END

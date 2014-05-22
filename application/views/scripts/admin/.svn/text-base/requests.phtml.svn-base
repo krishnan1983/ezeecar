@@ -1,0 +1,64 @@
+	<script>
+	/*$(document).ready(function() {
+		$("#search").change(function() { //alert($(this).val());
+		    window.location.href = "/admin/requests/search/" + $(this).val();
+		});
+	});*/
+	function loadurl(){
+		var val  = $("#search").val();
+		window.location.href = "/admin/requests/search/" + val;	
+	}
+	
+	
+	</script>
+	
+	<div id="mid-cont">
+		<h3 class="fleft">REQUESTS</h3>
+		<select class="w2 fright" name="search" id="search" onchange="return loadurl();">
+			<option value="<?php echo Pp_Status::Me; ?>" <?php if($this->search === Pp_Status::Me) echo "selected"; ?>>Pending with me</option>
+			<option value="<?php echo Pp_Status::All; ?>" <?php if($this->search === Pp_Status::All) echo "selected"; ?>>All My Requests</option>
+			<option value="<?php echo Pp_Status::Non; ?>" <?php if($this->search === Pp_Status::Non) echo "selected"; ?>>Non Assigned Requests</option>			
+		</select>
+		<div class="column1 pad-adj fleft">		
+			<table cellpadding="0" cellspacing="0" class="table-style table-style1" summary="Request List">
+			<caption style="display:none">Request List</caption>	
+				<tr>
+					<th>Request Name</th>
+					<th>Request By</th>
+					<th>Status</th>
+					<th>Action</th>
+				</tr>
+				<?php 	
+			   if(isset($this->rowCount) && $this->rowCount!='0')
+			   {
+			
+				foreach($this->data as $requests):?>
+				<tr>
+					<td width="20%"><a href="/admin/viewrequest/request/<?php echo $requests['RequestId']; ?>/search/<?php echo $this->search;?>"><?php echo $requests['Name']?></a></td>
+					<td width="20%"><?php echo $requests['name']?></td>
+					<td width="15%"><?php echo Pp_Status::getDescriptionById($requests['Status']); ?></td>
+					<td width="45%">
+						<span class="button fleft"><a href="/admin/editrequest/request/<?php echo $requests['RequestId']; ?>/search/<?php echo $this->search;?>" title="Edit Request"><span class="edit-req">Edit Request</span></a></span>
+						<span class="button fleft"><a href="/admin/sendmsg/request/<?php echo $requests['RequestId']; ?>/search/<?php echo $this->search;?>"><span class="send-mes" title="Send Message">Send Message</span></a></span>
+						<?php if(isset($requests['Type']) && $requests['Type'] !='d' && $requests['Status']!=Pp_Status::TA):?>
+						<span class="button fleft"><a href="/admin/sendtota/request/<?php echo $requests['RequestId']; ?>/search/<?php echo $this->search;?>"><span class="send-ta" title="Send to TA">Send to TA</span></a></span>
+						<?php endif;?>
+					</td>
+				</tr>
+				<?php endforeach; 
+				
+			   }else{
+				?>	
+				<tr>
+					<td colspan="4" style="text-align:center">There are no pending request(s) for you</td>
+					
+					</tr>
+					<?php } ?>			
+			</table>
+		</div>
+		<div class="pagination">
+		<?php  echo $this->paginationControl($this->data, 'Sliding', '/partials/paginator.phtml'); ?>	
+		</div>	
+	</div>
+	
+	

@@ -1,0 +1,53 @@
+K 25
+svn:wc:ra_dav:version-url
+V 64
+/PnG/!svn/ver/80332/ppEditor/trunk/ppeditor/library/Zend/Captcha
+END
+Base.php
+K 25
+svn:wc:ra_dav:version-url
+V 73
+/PnG/!svn/ver/80332/ppEditor/trunk/ppeditor/library/Zend/Captcha/Base.php
+END
+Figlet.php
+K 25
+svn:wc:ra_dav:version-url
+V 75
+/PnG/!svn/ver/80332/ppEditor/trunk/ppeditor/library/Zend/Captcha/Figlet.php
+END
+ReCaptcha.php
+K 25
+svn:wc:ra_dav:version-url
+V 78
+/PnG/!svn/ver/80332/ppEditor/trunk/ppeditor/library/Zend/Captcha/ReCaptcha.php
+END
+Word.php
+K 25
+svn:wc:ra_dav:version-url
+V 73
+/PnG/!svn/ver/80332/ppEditor/trunk/ppeditor/library/Zend/Captcha/Word.php
+END
+Exception.php
+K 25
+svn:wc:ra_dav:version-url
+V 78
+/PnG/!svn/ver/80332/ppEditor/trunk/ppeditor/library/Zend/Captcha/Exception.php
+END
+Adapter.php
+K 25
+svn:wc:ra_dav:version-url
+V 76
+/PnG/!svn/ver/80332/ppEditor/trunk/ppeditor/library/Zend/Captcha/Adapter.php
+END
+Image.php
+K 25
+svn:wc:ra_dav:version-url
+V 74
+/PnG/!svn/ver/80332/ppEditor/trunk/ppeditor/library/Zend/Captcha/Image.php
+END
+Dumb.php
+K 25
+svn:wc:ra_dav:version-url
+V 73
+/PnG/!svn/ver/80332/ppEditor/trunk/ppeditor/library/Zend/Captcha/Dumb.php
+END

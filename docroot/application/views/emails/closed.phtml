@@ -1,0 +1,11 @@
+Dear <?php echo $this->RequestBy;?>,<br><br>
+
+The following request has been colsed.<br><br>
+<?php  $include = APPLICATION_PATH.'/views/emails/emailRequestDetails.phtml';?><BR>
+<?php include_once $include;?>	<br>
+<?php if($this->StagingUrl !=''){?>
+Staging Url	:<b><?php echo $this->StagingUrl ?></b>	<br>
+<?php }if($this->ProductionUrl !=''){?>
+Production Url	:<?php echo $this->ProductionUrl ?>	<br>
+<?php }?>
+

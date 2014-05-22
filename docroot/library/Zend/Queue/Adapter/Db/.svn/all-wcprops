@@ -1,0 +1,41 @@
+K 25
+svn:wc:ra_dav:version-url
+V 73
+/PnG/!svn/ver/80332/ppEditor/trunk/ppeditor/library/Zend/Queue/Adapter/Db
+END
+postgresql.sql
+K 25
+svn:wc:ra_dav:version-url
+V 88
+/PnG/!svn/ver/80332/ppEditor/trunk/ppeditor/library/Zend/Queue/Adapter/Db/postgresql.sql
+END
+mysql.sql
+K 25
+svn:wc:ra_dav:version-url
+V 83
+/PnG/!svn/ver/80332/ppEditor/trunk/ppeditor/library/Zend/Queue/Adapter/Db/mysql.sql
+END
+queue_sqlite.sql
+K 25
+svn:wc:ra_dav:version-url
+V 90
+/PnG/!svn/ver/80332/ppEditor/trunk/ppeditor/library/Zend/Queue/Adapter/Db/queue_sqlite.sql
+END
+sqlsrv.sql
+K 25
+svn:wc:ra_dav:version-url
+V 84
+/PnG/!svn/ver/80332/ppEditor/trunk/ppeditor/library/Zend/Queue/Adapter/Db/sqlsrv.sql
+END
+Message.php
+K 25
+svn:wc:ra_dav:version-url
+V 85
+/PnG/!svn/ver/80332/ppEditor/trunk/ppeditor/library/Zend/Queue/Adapter/Db/Message.php
+END
+Queue.php
+K 25
+svn:wc:ra_dav:version-url
+V 83
+/PnG/!svn/ver/80332/ppEditor/trunk/ppeditor/library/Zend/Queue/Adapter/Db/Queue.php
+END
